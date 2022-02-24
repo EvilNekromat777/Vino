@@ -1,0 +1,39 @@
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+}
+
+.container{
+    border: 1px solid red;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.logo{
+    margin-right: 34px;
+}
+
+.button{
+    height: 40px;
+    width: 224px;
+    background: $corporat-red;
+    border-radius: 5px;
+
+    &__catalog{
+        width: 130px;
+        background: $catalog;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+
+        svg{
+            width: 20px;
+            height: 18px;
+            margin-right: 8px;
+        }
+    }
+}

@@ -63,5 +63,15 @@ $(".menu ul li").click(function(e) {
   })
 
 
-
-
+  // Слайдер
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    slidesPerView: 4,
+    loopFillGroupWithBlank: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });

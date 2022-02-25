@@ -6,12 +6,13 @@
 }
 
 .product-min{
-    border: 1px solid red;
     width: 24.8%;
+    max-width: 310px;
     height: 500px;
     padding: 20px;
     position: relative;
     margin-bottom: 10px;
+    transition: all 0.5s ease 0s;
 
     &__img{
         text-align: center;
@@ -114,6 +115,22 @@
         }
     }
 
+    .favourites{
+        top: 56px;
+        right: 30px;
+        opacity: 0;
+        transition: opacity 0.5s ease 0s;
+
+        svg{
+            width: 23px;
+            height: 20px;
+
+            use{
+                fill: #828282;
+            }
+        }
+    }
+
     .block-title{
         font-weight: 500;
         font-size: 16px;
@@ -127,6 +144,7 @@
     }
 
     .button{
+        transition: background 0.5s ease 0s;
 
         svg{
             width: 20px;
@@ -138,5 +156,54 @@
             font-size: 16px;
             color: $text-white;
         }
+    }
+
+    .year{
+        transition: all 0.5s ease 0s;
+    }
+
+    &:hover{
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        cursor: pointer;
+
+        .favourites{
+            opacity: 1;
+        }
+
+        .button{
+            background: $button-active;
+        }
+
+        .year{
+            background: $button-catalog;
+            color: $text-white;
+        }
+    }
+}
+
+
+@media (max-width: 1200px){
+
+    .product-min{
+        width: 33%;
+    }
+}
+
+@media (max-width: 900px){
+
+    .product-min{
+        width: 50%;
+    }
+}
+
+@media (max-width: 580px){
+
+    .products{
+        justify-content: center;
+    }
+    
+    .product-min{
+        width: 100%;
     }
 }

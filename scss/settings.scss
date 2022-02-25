@@ -5,7 +5,6 @@
 }
 
 .container{
-    // border: 1px solid red;
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
@@ -25,6 +24,11 @@
     align-items: center;
     justify-content: center;
     color: $text-white;
+    transition: background 0.5s ease 0s;
+
+    &:hover{
+        background: $button-active;
+    }
 
     &__catalog{
         width: 130px;

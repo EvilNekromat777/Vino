@@ -1,0 +1,142 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.product-min{
+    border: 1px solid red;
+    width: 24.8%;
+    height: 500px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 10px;
+
+    &__img{
+        text-align: center;
+    }
+
+    &__info{
+        font-size: 10px;
+        color: $text-lite;
+        background: #F0F0F0;
+        border-radius: 4px;
+        padding: 3px 5px;
+        margin-right: 7px;
+
+        &-wrap{
+            display: flex;
+            margin: 10px 0px 0px 0px;
+        }
+    }
+
+    &__article{
+        margin-top: 18px;
+        color: $text-grey;
+        font-size: 12px;
+    }
+
+    &__price{
+        font-weight: bold;
+        font-size: 20px;
+        color: $text-bold;
+        margin-right: 10px;
+
+        &-wrap{
+            display: flex;
+            align-items: center;
+            margin-top: 14px;
+    
+            .old{
+                font-weight: normal;
+                font-size: 16px;
+                color: $text-grey;
+                padding-top: 3px;
+                position: relative;
+    
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 60%;
+                    left: -1px;
+                    display: block;
+                    width: 58px;
+                    height: 1px;
+                    z-index: 2;
+                    background-color: $text-grey;
+                }
+            }
+        }
+    }
+
+    &__buttons-wrap{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+
+        .open-box{
+            width: 36px;
+            height: 36px;
+            margin-left: 10px;
+        }
+    }
+
+    &__plashka{
+        position: absolute;
+        top: 30px;
+        color: $text-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sale{
+        font-weight: bold;
+        font-size: 16px;
+        background: $button-catalog;
+        border-radius: 5px;
+        left: 30px;
+        width: 50px;
+        height: 26px;
+    }
+
+    .available{
+        background: #3CAA3C;
+        border-radius: 4px;
+        font-size: 10px;
+        right: 30px;
+        width: 60px;
+        height: 16px;
+
+        &_not{
+            background: $gray;
+        }
+    }
+
+    .block-title{
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 15px;
+
+        &__inglish{
+            font-size: 14px;
+            color: $text-grey;
+            margin-top: 5px;
+        }
+    }
+
+    .button{
+
+        svg{
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        span{
+            font-size: 16px;
+            color: $text-white;
+        }
+    }
+}

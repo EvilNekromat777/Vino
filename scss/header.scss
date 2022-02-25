@@ -2,15 +2,24 @@
 
 .header{
 
-	&__top{
+	&__row{
 		display: flex;
 		justify-content: space-between;
+		position: relative;
 	}
 
-	&__top-wrap{
+	&__top{
 		height: 100px;
-		background: linear-gradient(90.02deg, #70001B -1.41%, #A5032A 102.17%);
-		padding: 17px 0px 0px 0px;
+		background: $header-top;
+		display: flex;
+    	align-items: center;
+	}
+
+	&__bottom{
+		height: 50px;
+		background: $header-bottom;
+		display: flex;
+    	align-items: center;
 	}
 
 	&__info{
@@ -23,6 +32,50 @@
 	&__catalog{
 		display: flex;
 		height: 40px;
+	}
+
+	&__icons{
+		display: flex;
+	}
+
+	&__icon-group{
+		display: block;
+		text-align: center;
+		margin-right: 24px;
+		position: relative;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		&-wrap{
+			position: relative;
+		}
+
+		svg{
+			height: 26px;
+			width: 26px;
+		}
+
+		p{
+			font-size: 12px;
+			margin-top: 4px;
+		}
+
+		.qount{
+			position: absolute;
+			top: -5px;
+			right: 0;
+			font-weight: 500;
+			border-radius: 23px;
+			padding: 4px;
+		}
+
+		.summ{
+			font-weight: 500;
+			color: $text-white;
+			margin-top: 5px;
+		}
 	}
 }
 
@@ -40,7 +93,7 @@
 
     &-button-div{
         width: 60px;
-        background: $catalog;
+        background: $button-catalog;
         display: flex;
         align-items:center;
         justify-content: center;
@@ -48,6 +101,11 @@
         button{
             background: transparent;
         }
+
+		svg{
+			width: 20px;
+			height: 20px;
+		}
     }
 }
 
@@ -55,16 +113,134 @@
 
 	svg{
 		margin-right: 5px;
+		width: 20px;
+		height: 20px;
 	}
 
 	span{
-		color: $white;
 		font-weight: 500;
 		font-size: 20px;
-		line-height: 170%;
 	}
 }
 
+.menu{
+	width: 100%;
 
+	ul{
+		display: flex;
+		justify-content: space-between;
+
+		li{
+			display: flex;
+    		align-items: center;
+			padding: 0 16px;
+			transition: all .5s ease 0s;
+		}
+
+		.active{
+			background: $button-active;
+			height: 50px;
+			padding: 0 16px;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+
+	.search-input-div{
+		display: none;
+	}
+
+	.header__bottom{
+		display: none;
+	}
+}
+
+@media (max-width: 860px){
+
+	.phone{
+
+		span{
+			font-size: 14px;
+		}
+
+		svg{
+			margin-right: 2px;
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	.header__icon-group{
+
+		.summ{
+			font-size: 12px;
+		}
+
+		p{
+			font-size: 10px;
+		}
+	}
+}
+
+@media (max-width: 767px){
+
+	.header{
+
+		&__top{
+			height: 90px;
+		}
+
+		&__row{
+			display: block;
+		}
+
+		&__icons{
+			margin-right: 10px;
+		}
+
+		&__icon-group{
+			margin-right: 14px;
+
+			p{
+				display: none;
+			}
+
+			svg{
+				width: 20px;
+				height: 20px;
+			}
+
+			.summ{
+				display: none;
+			}
+
+			.qount{
+				font-size: 8px;
+				right: -12px;
+    			top: -8px;
+			}
+		}
+	}
+
+	.logo{
+		margin-bottom: 5px;
+    	height: 35px;
+	}
+
+	.phone{
+		position: absolute;
+		top: 8px;
+		right: 0;
+
+		span{
+			font-size: 16px;
+		}
+	}
+
+	.search-button-div{
+		background: transparent;
+	}
+}
 
 

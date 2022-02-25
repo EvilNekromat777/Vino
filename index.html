@@ -15,52 +15,534 @@
 
 		<header class="header">
 
-
-				<div class="header__top-wrap">
+				<div class="header__top">
 					<div class="container">
-						<div class="header__top">
+						<div class="header__row">
 							<img src="images/logo.png" class="logo">
 							<div class="header__info">
 
 								<div class="header__catalog">
 									<button class="button button__catalog">
-										<svg width="20" height="18" viewBox="0 0 20 18" fill="none">
-										<path d="M2.5 5.25H17.5C18.8806 5.25 20 4.13062 20 2.75C20 1.36938 18.8806 0.25 17.5 0.25H2.5C1.11938 0.25 0 1.36938 0 2.75C0 4.13062 1.11938 5.25 2.5 5.25ZM2.5 1.5H17.5C18.1906 1.5 18.75 2.05938 18.75 2.75C18.75 3.44062 18.1906 4 17.5 4H2.5C1.80938 4 1.25 3.44062 1.25 2.75C1.25 2.05938 1.80938 1.5 2.5 1.5ZM17.5 12.75H2.5C1.11938 12.75 0 13.8694 0 15.25C0 16.6306 1.11938 17.75 2.5 17.75H17.5C18.8806 17.75 20 16.6306 20 15.25C20 13.8694 18.8806 12.75 17.5 12.75ZM17.5 16.5H2.5C1.80938 16.5 1.25 15.9406 1.25 15.25C1.25 14.5594 1.80938 14 2.5 14H17.5C18.1906 14 18.75 14.5594 18.75 15.25C18.75 15.9406 18.1906 16.5 17.5 16.5ZM17.5 6.5H2.5C1.11938 6.5 0 7.61938 0 9C0 10.3806 1.11938 11.5 2.5 11.5H17.5C18.8806 11.5 20 10.3806 20 9C20 7.61938 18.8806 6.5 17.5 6.5ZM17.5 10.25H2.5C1.80938 10.25 1.25 9.69062 1.25 9C1.25 8.31 1.80938 7.75 2.5 7.75H17.5C18.1906 7.75 18.75 8.30938 18.75 9C18.75 9.69062 18.1906 10.25 17.5 10.25Z" fill="white"/>
-										</svg>Каталог</button>
-										<form action="/search/" method="get" class="search-form search-form--desktop">
-											<div class="search-input-div">
-												<input type="text" name="q" class="search-input" placeholder="Поиск по каталогу">
-											</div>
-											<div class="search-button-div">
-												<button type="submit">
-													<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-														<path d="M8.24515 16.4718C3.70387 16.4718 0.00927734 12.7772 0.00927734 8.23588C0.00927734 3.69459 3.70387 0 8.24515 0C12.7864 0 16.481 3.69459 16.481 8.23588C16.481 12.7772 12.7864 16.4718 8.24515 16.4718ZM8.24515 1.5613C4.56477 1.5613 1.57058 4.5555 1.57058 8.23588C1.57058 11.9163 4.56477 14.9105 8.24515 14.9105C11.9255 14.9105 14.9197 11.9163 14.9197 8.23588C14.9197 4.5555 11.9255 1.5613 8.24515 1.5613Z" fill="white"/>
-														<path d="M19.2116 20.0001C19.0118 20.0001 18.812 19.9239 18.6595 19.7714L15.1661 16.278C14.8613 15.9731 14.8613 15.4788 15.1661 15.174C15.471 14.8691 15.9653 14.8691 16.2702 15.174L19.7636 18.6674C20.0684 18.9723 20.0684 19.4666 19.7636 19.7714C19.6112 19.9238 19.4114 20.0001 19.2116 20.0001Z" fill="white"/>
-													</svg>
-													
-												</button>
-											</div>
-										</form>
+										<svg>
+											<use xlink:href="/images/sprite.svg#catalog-icon"></use>
+										</svg>
+										<span>Каталог</span>
+									</button>
+									<form action="/search/" method="get" class="search-form">
+										<div class="search-input-div">
+											<input type="text" name="q" class="search-input" placeholder="Поиск по каталогу">
+										</div>
+										<div class="search-button-div">
+											<button type="submit">
+												<svg>
+													<use xlink:href="/images/sprite.svg#catalog-search"></use>
+												</svg>
+											</button>
+										</div>
+									</form>
 								</div>
 								<a href="tel:+78125646625" class="phone">
-									<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-										<path d="M19.4557 14.678L16.6646 11.8869C15.6678 10.8901 13.9732 11.2889 13.5745 12.5847C13.2754 13.4819 12.2786 13.9803 11.3815 13.7809C9.3879 13.2825 6.69652 10.6908 6.19812 8.59746C5.89907 7.7003 6.49716 6.70349 7.39428 6.40448C8.69013 6.00576 9.08886 4.31119 8.09205 3.31438L5.30099 0.523324C4.50354 -0.174441 3.30738 -0.174441 2.60961 0.523324L0.715678 2.41726C-1.17826 4.41087 0.915039 9.69395 5.60003 14.3789C10.285 19.0639 15.5681 21.2569 17.5617 19.2633L19.4557 17.3694C20.1535 16.5719 20.1535 15.3757 19.4557 14.678Z" fill="white"/>
+									<svg>
+										<use xlink:href="/images/sprite.svg#phone-icon"></use>
 									</svg>
 									<span>+7 (812) 564-66-25</span>
 								</a>
-								<div class="header__icons">Иконки</div>
+								<div class="header__icons">
+									<a href="" class="header__icon-group favourites">
+										<svg>
+											<use xlink:href="/images/sprite.svg#favourites-icon"></use>
+										</svg>
+										<p>Избранное</p>
+										<span class="qount">346</span>
+									</a>
+									<a href="" class="header__icon-group cabinet">
+										<svg>
+											<use xlink:href="/images/sprite.svg#cabinet-icon"></use>
+										</svg>
+										<p>Вход</p>
+									</a>
+									<a href="" class="header__icon-group basket">
+										<div class="header__icon-group-wrap">
+											<svg>
+												<use xlink:href="/images/sprite.svg#basket-icon"></use>
+											</svg>
+											<p>Корзина</p>
+											<span class="qount">102</span>
+										</div>
+										<span class="summ">4 892 р.</span>
+									</a>
+								</div>
 
 							</div>
 						</div>
 					</div>
 				</div>
 
+				<div class="header__bottom">
+					<div class="container">
+						<div class="header__row">
+							<nav class="menu">                                                                     
+								<ul>
+									<li class="active">
+										<a href="">Вино</a>
+									</li>
+									<li>
+										<a href="">Шампанское и игристые вина</a>
+									</li>
+									<li>
+										<a href="">Виски</a>
+									</li>
+									<li>
+										<a href="">Коньяк</a>
+									</li>
+									<li>
+										<a href="">Водка</a>
+									</li>
+									<li>
+										<a href="">Крепкие напитки</a>
+									</li>
+									<li>
+										<a href="">Аксесуары и подарки</a>
+									</li>
+									<li>
+										<a href="">Акции%</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
 			
 		</header>
 
+		<main>
+			<div class="container">
+
+				<section class="catalog-page">
+					<h1 class="block-title">Популярные товары</h1>
+					<div class="catalog-page__content">
+
+						<section class="products">
+							<div class="product-min">
+								<div class="product-min__plashka sale">-10%</div>
+								<div class="product-min__plashka available">В наличии</div>
+								<div class="product-min__img">
+									<img src="/images/product-min-01.png" alt="Вино Монтез Шардоне Резерв">
+								</div>
+								<div class="product-min__info-wrap">
+									<p class="product-min__info country">Франция</p>
+									<p class="product-min__info year">1867г.</p>
+									<p class="product-min__info version">Сухое</p>
+									<p class="product-min__info size">0,75л.</p>
+									<p class="product-min__info rate">12%</p>
+								</div>
+								<div class="product-min__article">Артикул: <span>09-81412</span></div>
+								<div class="product-min__title">
+									<h1 class="block-title">Вино Монтез Шардоне Резерв</h1>
+									<p class="block-title__inglish">Wine Montes Chardonnay Reserva</p>
+								</div>
+								<div class="product-min__price-wrap">
+									<p class="product-min__price new"><span>2 740</span> р.</p>
+									<p class="product-min__price old"> <span>3 230</span> р.</p>
+								</div>
+								<div class="product-min__buttons-wrap">
+									<button class="button">
+										<svg>
+											<use xlink:href="/images/sprite.svg#basket-icon"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<svg class="open-box">
+										<use xlink:href="/images/sprite.svg#open-box"></use>
+									</svg>
+								</div>
+
+							</div>
+							<div class="product-min">
+								<div class="product-min__plashka available available_not">Ожидается</div>
+								<div class="product-min__img">
+									<img src="/images/product-min-02.png" alt="Вино Монтез Шардоне Резерв">
+								</div>
+								<div class="product-min__info-wrap">
+									<p class="product-min__info country">Франция</p>
+									<p class="product-min__info year">1867г.</p>
+									<p class="product-min__info version">Сухое</p>
+									<p class="product-min__info size">0,75л.</p>
+									<p class="product-min__info rate">12%</p>
+								</div>
+								<div class="product-min__article">Артикул: <span>09-81412</span></div>
+								<div class="product-min__title">
+									<h1 class="block-title">Вино Монтез Шардоне Резерв</h1>
+									<p class="block-title__inglish">Wine Montes Chardonnay Reserva</p>
+								</div>
+								<div class="product-min__price-wrap">
+									<p class="product-min__price new"><span>6 555</span> р.</p>
+								</div>
+								<div class="product-min__buttons-wrap">
+									<button class="button">
+										<svg>
+											<use xlink:href="/images/sprite.svg#basket-icon"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<svg class="open-box">
+										<use xlink:href="/images/sprite.svg#open-box"></use>
+									</svg>
+								</div>
+
+							</div>
+							<div class="product-min">
+								<div class="product-min__plashka sale">-15%</div>
+								<div class="product-min__plashka available">В наличии</div>
+								<div class="product-min__img">
+									<img src="/images/product-min-03.png" alt="Вино Монтез Шардоне Резерв">
+								</div>
+								<div class="product-min__info-wrap">
+									<p class="product-min__info country">Франция</p>
+									<p class="product-min__info year">1867г.</p>
+									<p class="product-min__info version">Сухое</p>
+									<p class="product-min__info size">0,75л.</p>
+									<p class="product-min__info rate">12%</p>
+								</div>
+								<div class="product-min__article">Артикул: <span>09-81412</span></div>
+								<div class="product-min__title">
+									<h1 class="block-title">Вино Монтез Шардоне Резерв</h1>
+									<p class="block-title__inglish">Wine Montes Chardonnay Reserva</p>
+								</div>
+								<div class="product-min__price-wrap">
+									<p class="product-min__price new"><span>1 140</span> р.</p>
+									<p class="product-min__price old"> <span>1 230</span> р.</p>
+								</div>
+								<div class="product-min__buttons-wrap">
+									<button class="button">
+										<svg>
+											<use xlink:href="/images/sprite.svg#basket-icon"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<svg class="open-box">
+										<use xlink:href="/images/sprite.svg#open-box"></use>
+									</svg>
+								</div>
+
+							</div>
+							<div class="product-min">
+								<div class="product-min__plashka sale">-25%</div>
+								<div class="product-min__plashka available">В наличии</div>
+								<div class="product-min__img">
+									<img src="/images/product-min-04.png" alt="Вино Монтез Шардоне Резерв">
+								</div>
+								<div class="product-min__info-wrap">
+									<p class="product-min__info country">Франция</p>
+									<p class="product-min__info year">1867г.</p>
+									<p class="product-min__info version">Сухое</p>
+									<p class="product-min__info size">0,75л.</p>
+									<p class="product-min__info rate">12%</p>
+								</div>
+								<div class="product-min__article">Артикул: <span>09-81412</span></div>
+								<div class="product-min__title">
+									<h1 class="block-title">Вино Монтез Шардоне Резерв</h1>
+									<p class="block-title__inglish">Wine Montes Chardonnay Reserva</p>
+								</div>
+								<div class="product-min__price-wrap">
+									<p class="product-min__price new"><span>4 740</span> р.</p>
+									<p class="product-min__price old"> <span>3 230</span> р.</p>
+								</div>
+								<div class="product-min__buttons-wrap">
+									<button class="button">
+										<svg>
+											<use xlink:href="/images/sprite.svg#basket-icon"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<svg class="open-box">
+										<use xlink:href="/images/sprite.svg#open-box"></use>
+									</svg>
+								</div>
+
+							</div>
+							<div class="product-min">
+								<div class="product-min__plashka sale">-10%</div>
+								<div class="product-min__plashka available available_not">Ожидается</div>
+								<div class="product-min__img">
+									<img src="/images/product-min-05.png" alt="Вино Монтез Шардоне Резерв">
+								</div>
+								<div class="product-min__info-wrap">
+									<p class="product-min__info country">Франция</p>
+									<p class="product-min__info year">1867г.</p>
+									<p class="product-min__info version">Сухое</p>
+									<p class="product-min__info size">0,75л.</p>
+									<p class="product-min__info rate">12%</p>
+								</div>
+								<div class="product-min__article">Артикул: <span>09-81412</span></div>
+								<div class="product-min__title">
+									<h1 class="block-title">Вино Монтез Шардоне Резерв</h1>
+									<p class="block-title__inglish">Wine Montes Chardonnay Reserva</p>
+								</div>
+								<div class="product-min__price-wrap">
+									<p class="product-min__price new"><span>1 800</span> р.</p>
+									<p class="product-min__price old"> <span>3 230</span> р.</p>
+								</div>
+								<div class="product-min__buttons-wrap">
+									<button class="button">
+										<svg>
+											<use xlink:href="/images/sprite.svg#basket-icon"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<svg class="open-box">
+										<use xlink:href="/images/sprite.svg#open-box"></use>
+									</svg>
+								</div>
+
+							</div>
+							<div class="product-min">
+								<div class="product-min__plashka available">В наличии</div>
+								<div class="product-min__img">
+									<img src="/images/product-min-06.png" alt="Вино Монтез Шардоне Резерв">
+								</div>
+								<div class="product-min__info-wrap">
+									<p class="product-min__info country">Франция</p>
+									<p class="product-min__info year">1867г.</p>
+									<p class="product-min__info version">Сухое</p>
+									<p class="product-min__info size">0,75л.</p>
+									<p class="product-min__info rate">12%</p>
+								</div>
+								<div class="product-min__article">Артикул: <span>09-81412</span></div>
+								<div class="product-min__title">
+									<h1 class="block-title">Вино Монтез Шардоне Резерв</h1>
+									<p class="block-title__inglish">Wine Montes Chardonnay Reserva</p>
+								</div>
+								<div class="product-min__price-wrap">
+									<p class="product-min__price new"><span>5 040</span> р.</p>
+								</div>
+								<div class="product-min__buttons-wrap">
+									<button class="button">
+										<svg>
+											<use xlink:href="/images/sprite.svg#basket-icon"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<svg class="open-box">
+										<use xlink:href="/images/sprite.svg#open-box"></use>
+									</svg>
+								</div>
+
+							</div>
+							<div class="product-min">
+								<div class="product-min__plashka sale">-15%</div>
+								<div class="product-min__plashka available">В наличии</div>
+								<div class="product-min__img">
+									<img src="/images/product-min-07.png" alt="Вино Монтез Шардоне Резерв">
+								</div>
+								<div class="product-min__info-wrap">
+									<p class="product-min__info country">Франция</p>
+									<p class="product-min__info year">1867г.</p>
+									<p class="product-min__info version">Сухое</p>
+									<p class="product-min__info size">0,75л.</p>
+									<p class="product-min__info rate">12%</p>
+								</div>
+								<div class="product-min__article">Артикул: <span>09-81412</span></div>
+								<div class="product-min__title">
+									<h1 class="block-title">Вино Монтез Шардоне Резерв</h1>
+									<p class="block-title__inglish">Wine Montes Chardonnay Reserva</p>
+								</div>
+								<div class="product-min__price-wrap">
+									<p class="product-min__price new"><span>2 940</span> р.</p>
+									<p class="product-min__price old"> <span>3 230</span> р.</p>
+								</div>
+								<div class="product-min__buttons-wrap">
+									<button class="button">
+										<svg>
+											<use xlink:href="/images/sprite.svg#basket-icon"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<svg class="open-box">
+										<use xlink:href="/images/sprite.svg#open-box"></use>
+									</svg>
+								</div>
+
+							</div>
+							<div class="product-min">
+								<div class="product-min__plashka available available_not">Ожидается</div>
+								<div class="product-min__img">
+									<img src="/images/product-min-08.png" alt="Вино Монтез Шардоне Резерв">
+								</div>
+								<div class="product-min__info-wrap">
+									<p class="product-min__info country">Франция</p>
+									<p class="product-min__info year">1867г.</p>
+									<p class="product-min__info version">Сухое</p>
+									<p class="product-min__info size">0,75л.</p>
+									<p class="product-min__info rate">12%</p>
+								</div>
+								<div class="product-min__article">Артикул: <span>09-81412</span></div>
+								<div class="product-min__title">
+									<h1 class="block-title">Вино Монтез Шардоне Резерв</h1>
+									<p class="block-title__inglish">Wine Montes Chardonnay Reserva</p>
+								</div>
+								<div class="product-min__price-wrap">
+									<p class="product-min__price new"><span>1 430</span> р.</p>
+								</div>
+								<div class="product-min__buttons-wrap">
+									<button class="button">
+										<svg>
+											<use xlink:href="/images/sprite.svg#basket-icon"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<svg class="open-box">
+										<use xlink:href="/images/sprite.svg#open-box"></use>
+									</svg>
+								</div>
+
+							</div>
+							<div class="product-min">
+								<div class="product-min__plashka available available_not">Ожидается</div>
+								<div class="product-min__img">
+									<img src="/images/product-min-09.png" alt="Вино Монтез Шардоне Резерв">
+								</div>
+								<div class="product-min__info-wrap">
+									<p class="product-min__info country">Франция</p>
+									<p class="product-min__info year">1867г.</p>
+									<p class="product-min__info version">Сухое</p>
+									<p class="product-min__info size">0,75л.</p>
+									<p class="product-min__info rate">12%</p>
+								</div>
+								<div class="product-min__article">Артикул: <span>09-81412</span></div>
+								<div class="product-min__title">
+									<h1 class="block-title">Вино Монтез Шардоне Резерв</h1>
+									<p class="block-title__inglish">Wine Montes Chardonnay Reserva</p>
+								</div>
+								<div class="product-min__price-wrap">
+									<p class="product-min__price new"><span>1 800</span> р.</p>
+								</div>
+								<div class="product-min__buttons-wrap">
+									<button class="button">
+										<svg>
+											<use xlink:href="/images/sprite.svg#basket-icon"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<svg class="open-box">
+										<use xlink:href="/images/sprite.svg#open-box"></use>
+									</svg>
+								</div>
+
+							</div>
+							<div class="product-min">
+								<div class="product-min__plashka available">В наличии</div>
+								<div class="product-min__img">
+									<img src="/images/product-min-10.png" alt="Вино Монтез Шардоне Резерв">
+								</div>
+								<div class="product-min__info-wrap">
+									<p class="product-min__info country">Франция</p>
+									<p class="product-min__info year">1867г.</p>
+									<p class="product-min__info version">Сухое</p>
+									<p class="product-min__info size">0,75л.</p>
+									<p class="product-min__info rate">12%</p>
+								</div>
+								<div class="product-min__article">Артикул: <span>09-81412</span></div>
+								<div class="product-min__title">
+									<h1 class="block-title">Вино Монтез Шардоне Резерв</h1>
+									<p class="block-title__inglish">Wine Montes Chardonnay Reserva</p>
+								</div>
+								<div class="product-min__price-wrap">
+									<p class="product-min__price new"><span>5 040</span> р.</p>
+								</div>
+								<div class="product-min__buttons-wrap">
+									<button class="button">
+										<svg>
+											<use xlink:href="/images/sprite.svg#basket-icon"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<svg class="open-box">
+										<use xlink:href="/images/sprite.svg#open-box"></use>
+									</svg>
+								</div>
+
+							</div>
+							<div class="product-min">
+								<div class="product-min__plashka available">В наличии</div>
+								<div class="product-min__img">
+									<img src="/images/product-min-11.png" alt="Вино Монтез Шардоне Резерв">
+								</div>
+								<div class="product-min__info-wrap">
+									<p class="product-min__info country">Франция</p>
+									<p class="product-min__info year">1867г.</p>
+									<p class="product-min__info version">Сухое</p>
+									<p class="product-min__info size">0,75л.</p>
+									<p class="product-min__info rate">12%</p>
+								</div>
+								<div class="product-min__article">Артикул: <span>09-81412</span></div>
+								<div class="product-min__title">
+									<h1 class="block-title">Вино Монтез Шардоне Резерв</h1>
+									<p class="block-title__inglish">Wine Montes Chardonnay Reserva</p>
+								</div>
+								<div class="product-min__price-wrap">
+									<p class="product-min__price new"><span>2 940</span> р.</p>
+									<p class="product-min__price old"> <span>3 230</span> р.</p>
+								</div>
+								<div class="product-min__buttons-wrap">
+									<button class="button">
+										<svg>
+											<use xlink:href="/images/sprite.svg#basket-icon"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<svg class="open-box">
+										<use xlink:href="/images/sprite.svg#open-box"></use>
+									</svg>
+								</div>
+
+							</div>
+							<div class="product-min">
+								<div class="product-min__plashka available available_not">Ожидается</div>
+								<div class="product-min__img">
+									<img src="/images/product-min-12.png" alt="Вино Монтез Шардоне Резерв">
+								</div>
+								<div class="product-min__info-wrap">
+									<p class="product-min__info country">Франция</p>
+									<p class="product-min__info year">1867г.</p>
+									<p class="product-min__info version">Сухое</p>
+									<p class="product-min__info size">0,75л.</p>
+									<p class="product-min__info rate">12%</p>
+								</div>
+								<div class="product-min__article">Артикул: <span>09-81412</span></div>
+								<div class="product-min__title">
+									<h1 class="block-title">Вино Монтез Шардоне Резерв</h1>
+									<p class="block-title__inglish">Wine Montes Chardonnay Reserva</p>
+								</div>
+								<div class="product-min__price-wrap">
+									<p class="product-min__price new"><span>1 430</span> р.</p>
+								</div>
+								<div class="product-min__buttons-wrap">
+									<button class="button">
+										<svg>
+											<use xlink:href="/images/sprite.svg#basket-icon"></use>
+										</svg>
+										<span>В корзину</span>
+									</button>
+									<svg class="open-box">
+										<use xlink:href="/images/sprite.svg#open-box"></use>
+									</svg>
+								</div>
+
+							</div>
+						</section>
+						<button class="button button__show-all">Показать все</button>
+
+
+					</div>
+				</section>
+
+			</div>
+		</main>
+
 	</div>
 
-
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="./js/script.js" defer></script>
 </body>
 

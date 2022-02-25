@@ -5,10 +5,11 @@
 }
 
 .container{
-    border: 1px solid red;
+    // border: 1px solid red;
     margin: 0 auto;
-    max-width: 1920px;
+    max-width: 1200px;
     width: 100%;
+    padding: 0 15px;
 }
 
 .logo{
@@ -20,11 +21,15 @@
     width: 224px;
     background: $corporat-red;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-white;
 
     &__catalog{
         width: 130px;
-        background: $catalog;
-        color: $white;
+        background: $button-catalog;
+        color: $text-white;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -35,5 +40,44 @@
             height: 18px;
             margin-right: 8px;
         }
+    }
+
+    &__show-all{
+        margin: 0 auto;
+    }
+}
+
+.qount{
+    font-size: 10px;
+    color: $text-white;
+    background: $plashka-green;
+}
+
+.basket{
+    display: flex;
+}
+
+.block-title{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+main{
+    color: $text-bold;
+}
+
+.catalog-page{
+    padding: 45px 0px 0px 0px;
+
+    &__content{
+        margin-top: 45px;
+    }
+}
+
+
+@media (max-width: 767px){
+
+    .button__catalog{
+        height: 35px;
     }
 }

@@ -1,0 +1,44 @@
+.journal{
+    margin-top: 70px;
+    padding: 40px 0px 50px 0px;
+    background: $background-gray;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        margin: 37px 0px 30px 0px;
+    }
+
+    &__item{
+        width: 365px;
+
+        .block-title{
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            margin: 26px 0px 12px 0px;
+
+            &_red{
+                color: $text-red;
+            }
+        }
+
+        .block__text{
+            font-size: 16px;
+            line-height: 140%;
+            color: $text-grey;
+            max-height: 65px;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
+}

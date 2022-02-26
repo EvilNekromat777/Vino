@@ -13,42 +13,8 @@
 
 .logo{
     margin-right: 34px;
-}
-
-.button{
-    height: 40px;
-    width: 224px;
-    background: $corporat-red;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $text-white;
-    transition: background 0.5s ease 0s;
-
-    &:hover{
-        background: $button-active;
-    }
-
-    &__catalog{
-        width: 130px;
-        background: $button-catalog;
-        color: $text-white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 10px;
-
-        svg{
-            width: 20px;
-            height: 18px;
-            margin-right: 8px;
-        }
-    }
-
-    &__show-all{
-        margin: 0 auto;
-    }
+    width: 113px;
+    height: 57px;
 }
 
 .qount{
@@ -64,24 +30,17 @@
 .block-title{
     font-weight: 500;
     font-size: 24px;
+    color: $text-bold;
+}
+
+.block__text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: $text-grey;
 }
 
 main{
     color: $text-bold;
 }
 
-.catalog-page{
-    padding: 45px 0px 0px 0px;
-
-    &__content{
-        margin-top: 45px;
-    }
-}
-
-
-@media (max-width: 767px){
-
-    .button__catalog{
-        height: 35px;
-    }
-}

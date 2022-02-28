@@ -6,10 +6,11 @@
     }
 
     &__info{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         margin: 0px 40px 0px 0px;
+    }
+
+    .block-title{
+        margin-bottom: 20px;
     }
 
     .block__text{
@@ -20,5 +21,56 @@
 
     .button{
         max-width: 130px;
+        margin-top: 25px;
+    }
+}
+
+
+@media (max-width: 960px){
+
+    .about-store{
+
+        &__wrap{
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 0px 0px 40px 0px;
+        }
+        
+        img{
+            width: 100%;
+            height: 293px;
+        }
+
+        .container{
+            padding: 0;
+        }
+
+        &__info{
+            margin: 30px 0px 0px 0px;
+            padding: 0px 15px;
+        }
+
+        .block-title{
+            font-size: 18px;
+        }
+
+        .block__text{
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media (max-width: 350px){
+
+    .about-store{
+
+        .block-title{
+            font-size: 14px;
+        }
+
+        .block__text{
+            font-size: 12px;
+        }
     }
 }

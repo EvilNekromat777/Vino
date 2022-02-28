@@ -77,6 +77,16 @@
 			margin-top: 5px;
 		}
 	}
+
+	.favourites{
+
+		svg{
+
+			use{
+				stroke: #fff;
+			}
+		}
+	}
 }
 
 .search{
@@ -221,26 +231,28 @@
     			top: -8px;
 			}
 		}
-	}
 
-	.logo{
-		margin-bottom: 5px;
-    	height: 35px;
-	}
-
-	.phone{
-		position: absolute;
-		top: 8px;
-		right: 0;
-
-		span{
-			font-size: 16px;
+		.logo{
+			margin-bottom: 5px;
+			height: 35px;
+		}
+	
+		.phone{
+			position: absolute;
+			top: 8px;
+			right: 0;
+	
+			span{
+				font-size: 16px;
+			}
+		}
+	
+		.search-button-div{
+			background: transparent;
 		}
 	}
 
-	.search-button-div{
-		background: transparent;
-	}
+	
 }
 
 

@@ -2,7 +2,7 @@
 
     &__top{
         background: $background-footer-top;
-        padding: 70px 0px 50px 0px;
+        padding: 70px 20px 50px 0px;
         
         &-wrap{
             display: flex;
@@ -10,14 +10,11 @@
         }
     }
 
-    &__accordion{
-        width: 100%;
-    }
-
     &__contacts{
         display: flex;
         flex-direction: column;
-        min-width: 300px;
+        min-width: 200px;
+        margin-bottom: 36px;
 
         .phone{
             margin: 30px 0px 0px 0px;
@@ -58,24 +55,61 @@
     }
 }
 
+@media (max-width: 750px){
 
+    .footer{
 
+        &__top{
+            padding-bottom: 20px;
+        }
 
-  
-    .fa-chevron-down {
-        transform: rotate(180deg);
+        &__top-wrap{
+            display: block;
+        }
+
+        &__contacts{
+            flex-direction: row;
+            align-items: center;
+
+            .phone{
+                margin-top: 0;
+            }
+        }
+
+        &__item{
+            margin-bottom: 45px;
+
+            ul li{
+                height: 0;
+                opacity: 0;
+                transition: height .5s ease 0s;
+            }
+
+            &.active{
+
+                ul li{
+                    height: auto;
+                    opacity: 1;
+                    transition: height .5s ease 0s;
+                }
+            }
+        }
+
+        .block-title{
+            margin: 0px 0px 10px 0px;
+            font-size: 18px;
+        }
     }
-  
-  .dropdownlink {
-    position: relative;
-    transition: all 0.4s ease-out;
-    i {
-      position: absolute;
-      top: 17px;
-      left: 16px;
+}
+
+@media (max-width: 374px){
+
+    .footer__contacts{
+        flex-direction: column;
+        align-items: self-start;
+
+        .phone{
+            margin-top: 20px;
+        }
     }
-    .fa-chevron-down {
-      right: 12px;
-      left: auto;
-    }
-  }
+}

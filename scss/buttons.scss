@@ -38,6 +38,26 @@
     &__show-all{
         margin: 0 auto;
     }
+
+    &__approval{
+        margin-right: 10px;
+        width: 296px;
+    }
+
+    &__disapproval{
+        width: 218px;
+        background: $background-white;
+        border: 1px solid #B6B6B6;
+
+        a{
+            color: $text-grey;
+        }
+
+        &:hover{
+            background: $background-white;
+            box-shadow: 0px 4px 14px rgb(0 0 0 / 15%);
+        }
+    }
 }
 
 
@@ -45,5 +65,16 @@
 
     .button__catalog{
         height: 35px;
+    }
+}
+
+
+@media (max-width: 450px){
+
+    .button{
+
+        &__approval, &__disapproval{
+            width: 100%;
+        }
     }
 }

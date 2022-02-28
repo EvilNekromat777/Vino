@@ -76,33 +76,51 @@ $(".menu ul li").click(function(e) {
 
 
 
-  // Аккордион для мобильного футера
-  $(function() {
-    var Accordion = function(el, multiple) {
-      this.el = el || {};
-      // more then one submenu open?
-      this.multiple = multiple || false;
-      
-      var dropdownlink = this.el.find('.dropdownlink');
-      dropdownlink.on('click',
-                      { el: this.el, multiple: this.multiple },
-                      this.dropdown);
-    };
-    
-    Accordion.prototype.dropdown = function(e) {
-      var $el = e.data.el,
-          $this = $(this),
-          //this is the ul.submenuItems
-          $next = $this.next();
-      
-      $next.slideToggle();
-      $this.parent().toggleClass('open');
-      
-      if(!e.data.multiple) {
-        //show only one menu at the same time
-        $el.find('.submenuItems').not($next).slideUp().parent().removeClass('open');
-      }
-    }
-    
-    var accordion = new Accordion($('.accordion-menu'), false);
+  // Мобильный футер
+  $(".footer__item").click(function(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
   })
+
+
+
+  // Появление модалки "18 лет" через 10 секунд после загрузки страницы
+  const modal = document.querySelector('.modal');
+  const buttonApproval = document.querySelector('.button__approval');
+  const modalTimerId = setTimeout(openModal, 3000);
+
+  function openModal() {
+    modal.classList.add('active');
+}
+
+buttonApproval.addEventListener( 'click', closeModal);
+function closeModal() {
+    modal.classList.remove('active');
+};
+  
+
+
+// Сердечко закрашивается красным
+$(".product-min .favourites").click(function(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+  })
+
+
+// Счетчик кол-ва товаров внутри карточки
+  $(document).ready(function() {
+    $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+    });
+});

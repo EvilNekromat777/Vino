@@ -8,6 +8,7 @@
 .product-min{
     width: 24.8%;
     max-width: 310px;
+    min-width: 300px;
     height: 500px;
     padding: 20px;
     position: relative;
@@ -218,6 +219,52 @@
             background: $button-catalog;
             color: $text-white;
         }
+    }
+
+    .counter{
+        align-items: center;
+        margin-top: 14px;
+        display: none;
+
+        &__number{
+            width: 120px;
+            height: 40px;
+            background: $corporat-red;
+            border-radius: 5px;
+            margin: 0 14px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+    
+            span{
+                font-weight: normal;
+                font-size: 16px;
+                color: $text-white;
+            }
+    
+            input{
+                background: $corporat-red;
+                color: $text-white;
+                text-align: center;
+            }
+        }
+
+        p{
+            font-size: 16px;
+            color: $text-lite-grey;
+
+            span{
+                color: $corporat-red;
+            }
+        }
+    }
+}
+
+.product-min.active{
+
+    .counter{
+        display: flex;
     }
 }
 

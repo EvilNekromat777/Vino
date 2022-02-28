@@ -84,7 +84,7 @@ $(".menu ul li").click(function(e) {
 
 
 
-  // Появление модалки "18 лет" через 10 секунд после загрузки страницы
+  // Появление модалки "18 лет" через 3 секунды после загрузки страницы
   const modal = document.querySelector('.modal');
   const buttonApproval = document.querySelector('.button__approval');
   const modalTimerId = setTimeout(openModal, 3000);
@@ -92,7 +92,6 @@ $(".menu ul li").click(function(e) {
   function openModal() {
     modal.classList.add('active');
 }
-
 buttonApproval.addEventListener( 'click', closeModal);
 function closeModal() {
     modal.classList.remove('active');
@@ -109,7 +108,7 @@ $(".product-min .favourites").click(function(e) {
 
 // Счетчик кол-ва товаров внутри карточки
   $(document).ready(function() {
-    $('.minus').click(function () {
+    $('.counter__minus').click(function () {
         var $input = $(this).parent().find('input');
         var count = parseInt($input.val()) - 1;
         count = count < 1 ? 1 : count;
@@ -117,10 +116,24 @@ $(".product-min .favourites").click(function(e) {
         $input.change();
         return false;
     });
-    $('.plus').click(function () {
+    $('.counter__plus').click(function () {
         var $input = $(this).parent().find('input');
         $input.val(parseInt($input.val()) + 1);
         $input.change();
         return false;
     });
 });
+
+
+// При нажатии кнопки "Добавить в корзину" появляется счетчик
+// $(".in-the-basket").click(function(e) {
+//     e.preventDefault();
+//     $(this).addClass('hide');
+//   })
+
+$(".in-the-basket").click(function(e) {
+    e.preventDefault();
+    $(this).addClass('hide');
+    $(this).parent().addClass('active');
+  })
+

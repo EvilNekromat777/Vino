@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+/*=======COLORS========*/
+/*buttons*/
+/*arrow css*/
+/*text*/
+/*background*/
+/*border*/
 *,
 *:before,
 *:after {
@@ -83,12 +89,6 @@ h6 {
   font-size: inherit;
 }
 
-/*=======COLORS========*/
-/*buttons*/
-/*arrow css*/
-/*text*/
-/*background*/
-/*border*/
 .wrapper {
   overflow: hidden;
   min-height: 100%;
@@ -97,7 +97,7 @@ h6 {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1240px;
   width: 100%;
   padding: 0 15px;
 }
@@ -202,6 +202,10 @@ main {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.hide {
+  display: none !important;
 }
 
 @media (max-width: 767px) {
@@ -470,6 +474,7 @@ main {
 .product-min {
   width: 24.8%;
   max-width: 310px;
+  min-width: 300px;
   height: 500px;
   padding: 20px;
   position: relative;
@@ -672,6 +677,53 @@ main {
 .product-min:hover .year {
   background: #BC0021;
   color: #FFFFFF;
+}
+.product-min .counter {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 14px;
+  display: none;
+}
+.product-min .counter__number {
+  width: 120px;
+  height: 40px;
+  background: #BC0021;
+  border-radius: 5px;
+  margin: 0 14px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 15px;
+}
+.product-min .counter__number span {
+  font-weight: normal;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.product-min .counter__number input {
+  background: #BC0021;
+  color: #FFFFFF;
+  text-align: center;
+}
+.product-min .counter p {
+  font-size: 16px;
+  color: #AFAFAF;
+}
+.product-min .counter p span {
+  color: #BC0021;
+}
+
+.product-min.active .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 1200px) {
@@ -1064,6 +1116,12 @@ main {
     margin-top: 20px;
   }
 }
+/*=======COLORS========*/
+/*buttons*/
+/*arrow css*/
+/*text*/
+/*background*/
+/*border*/
 .modal {
   position: fixed;
   top: 0;
@@ -1073,7 +1131,13 @@ main {
   height: 100%;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.8);
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1092,9 +1156,8 @@ main {
 }
 
 .modal.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 
 .proof-of-age__header {

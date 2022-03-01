@@ -28,6 +28,20 @@
             }
         }
     }
+
+    &__simple{
+
+        .slider-block__header{
+
+            .block-title{
+                color: $text-bold;
+
+                &:after{
+                    content: none;
+                }
+            }
+        }
+    }
 }
 
 .swiper{

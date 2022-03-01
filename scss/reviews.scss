@@ -1,0 +1,40 @@
+.reviews{
+
+    &__item{
+        display: flex;
+        max-width: 825px;
+        padding: 35px 0px 20px;
+        border-bottom: solid 1px #E2E2E2;
+    }
+
+    &__info{
+        margin-right: 67px;
+    }
+
+    &__name{
+        font-weight: 500;
+        font-size: 16px;
+        color: $text-red;
+        margin-bottom: 10px;
+    }
+
+    &__data{
+        font-size: 14px;
+        color: $text-grey;
+        margin-bottom: 15px;
+    }
+
+    &__title{
+        font-weight: 500;
+        font-size: 16px;
+        color: $text-bold;
+        margin-bottom: 10px;
+    }
+
+    &__p{
+        font-size: 14px;
+        line-height: 140%;
+        color: $text-grey;
+        margin-bottom: 16px;
+    }
+}

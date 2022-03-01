@@ -125,7 +125,7 @@
 							<div class="catalog-page__content">
 								<section class="products">
 
-									<div class="product-min">
+									<div id="previu" class="product-min">
 										<div class="product-min__plashka sale">-10%</div>
 										<div class="product-min__plashka available">В наличии</div>
 										<div class="product-min__plashka favourites">
@@ -700,19 +700,19 @@
 					<div class="slider-block__header">
 						<h2 class="block-title">Новинки</h2>
 						<button class="button button__more">Все новинки</button>
-						<div class="swiper-button-prev">
+						<div class="swiper-button-prev swiper-button-prev__news">
 							<svg>
 								<use xlink:href="/images/sprite.svg#slider-arrow-prev"></use>
 							</svg>
 						</div>
-						<div class="swiper-button-next">
+						<div class="swiper-button-next swiper-button-next__news">
 							<svg>
 								<use xlink:href="/images/sprite.svg#slider-arrow-next"></use>
 							</svg>
 						</div>
 					</div>
 					<!-- Slider main container -->
-					<div class="swiper">
+					<div class="swiper swiper__news">
 						<div class="swiper-wrapper">
 
 							<div class="swiper-slide">
@@ -1012,19 +1012,19 @@
 					<div class="slider-block__header">
 						<h2 class="block-title">Акции</h2>
 						<button class="button button__more">Все акции</button>
-						<div class="swiper-button-prev">
+						<div class="swiper-button-prev swiper-button-prev__stocks">
 							<svg>
 								<use xlink:href="/images/sprite.svg#slider-arrow-prev"></use>
 							</svg>
 						</div>
-						<div class="swiper-button-next">
+						<div class="swiper-button-next swiper-button-next__stocks">
 							<svg>
 								<use xlink:href="/images/sprite.svg#slider-arrow-next"></use>
 							</svg>
 						</div>
 					</div>
 					<!-- Slider main container -->
-					<div class="swiper">
+					<div class="swiper swiper__stocks">
 						<div class="swiper-wrapper">
 
 							<div class="swiper-slide">
@@ -1471,6 +1471,7 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="./js/script.js" defer></script>
+	<script src="./js/main-page.js" defer></script>
 </body>
 
 </html>

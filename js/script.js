@@ -63,48 +63,12 @@ $(".menu ul li").click(function(e) {
   })
 
 
-  // Слайдер
-  const swiper = new Swiper('.swiper', {
-    loop: true,
-    slidesPerView: 4,
-    loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
-
-
-
   // Мобильный футер
   $(".footer__item").click(function(e) {
     e.preventDefault();
     $(this).toggleClass('active');
   })
-
-
-
-  // Появление модалки "18 лет" через 3 секунды после загрузки страницы
-  const modal = document.querySelector('.modal');
-  const buttonApproval = document.querySelector('.button__approval');
-  const modalTimerId = setTimeout(openModal, 3000);
-
-  function openModal() {
-    modal.classList.add('active');
-}
-buttonApproval.addEventListener( 'click', closeModal);
-function closeModal() {
-    modal.classList.remove('active');
-};
-  
-
-
-// Сердечко закрашивается красным
-$(".product-min .favourites").click(function(e) {
-    e.preventDefault();
-    $(this).toggleClass('active');
-  })
-
+ 
 
 // Счетчик кол-ва товаров внутри карточки
   $(document).ready(function() {
@@ -124,16 +88,4 @@ $(".product-min .favourites").click(function(e) {
     });
 });
 
-
-// При нажатии кнопки "Добавить в корзину" появляется счетчик
-// $(".in-the-basket").click(function(e) {
-//     e.preventDefault();
-//     $(this).addClass('hide');
-//   })
-
-$(".in-the-basket").click(function(e) {
-    e.preventDefault();
-    $(this).addClass('hide');
-    $(this).parent().addClass('active');
-  })
 

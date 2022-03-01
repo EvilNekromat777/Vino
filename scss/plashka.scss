@@ -1,0 +1,26 @@
+
+// -10%
+.sale{
+    font-weight: bold;
+    font-size: 16px;
+    background: $button-catalog;
+    border-radius: 5px;
+    left: 30px;
+    width: 50px;
+    height: 26px;
+}
+
+// В наличии - ожидается
+.available{
+    background: #3CAA3C;
+    border-radius: 4px;
+    font-size: 10px;
+    right: 30px;
+    width: 60px;
+    height: 16px;
+
+    &_not{
+        background: $gray !important;
+        color: $text-white
+    }
+}

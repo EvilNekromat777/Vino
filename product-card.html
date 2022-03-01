@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="author" content="Evgeniya Kireeva">
+        <title>Vino</title>
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            
+            <header class="header">
+
+				<div class="header__top">
+					<div class="container">
+						<div class="header__row">
+							<img src="images/logo.png" class="logo">
+							<div class="header__info">
+
+								<div class="header__catalog">
+									<button class="button button__catalog">
+										<svg>
+											<use xlink:href="/images/sprite.svg#catalog-icon"></use>
+										</svg>
+										<span>Каталог</span>
+									</button>
+									<form action="/search/" method="get" class="search-form">
+										<div class="search-input-div">
+											<input type="text" name="q" class="search-input" placeholder="Поиск по каталогу">
+										</div>
+										<div class="search-button-div">
+											<button type="submit">
+												<svg>
+													<use xlink:href="/images/sprite.svg#catalog-search"></use>
+												</svg>
+											</button>
+										</div>
+									</form>
+								</div>
+								<a href="tel:+78125646625" class="phone">
+									<svg>
+										<use xlink:href="/images/sprite.svg#phone-icon"></use>
+									</svg>
+									<span>+7 (812) 564-66-25</span>
+								</a>
+								<div class="header__icons">
+									<a href="" class="header__icon-group favourites">
+										<svg>
+											<use xlink:href="/images/sprite.svg#favourites-icon"></use>
+										</svg>
+										<p>Избранное</p>
+										<span class="qount">346</span>
+									</a>
+									<a href="" class="header__icon-group cabinet">
+										<svg>
+											<use xlink:href="/images/sprite.svg#cabinet-icon"></use>
+										</svg>
+										<p>Вход</p>
+									</a>
+									<a href="" class="header__icon-group basket">
+										<div class="header__icon-group-wrap">
+											<svg>
+												<use xlink:href="/images/sprite.svg#basket-icon"></use>
+											</svg>
+											<p>Корзина</p>
+											<span class="qount">102</span>
+										</div>
+										<span class="summ">4 892 р.</span>
+									</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header__bottom">
+					<div class="container">
+						<div class="header__row">
+							<nav class="menu">                                                                     
+								<ul>
+									<li class="active">
+										<a href="">Вино</a>
+									</li>
+									<li>
+										<a href="">Шампанское и игристые вина</a>
+									</li>
+									<li>
+										<a href="">Виски</a>
+									</li>
+									<li>
+										<a href="">Коньяк</a>
+									</li>
+									<li>
+										<a href="">Водка</a>
+									</li>
+									<li>
+										<a href="">Крепкие напитки</a>
+									</li>
+									<li>
+										<a href="">Аксесуары и подарки</a>
+									</li>
+									<li>
+										<a href="">Акции%</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			
+		    </header>
+
+            <div class="container">
+                <div class="main-content product-card">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li>
+                                <a class="breadcrumbs__item" href="glavnaya.html">Главная</a>
+                            </li>
+                            <li>
+                                <a class="breadcrumbs__item" href="">Вино</a>
+                            </li>
+                            <li>
+                                <a class="breadcrumbs__item breadcrumbs__item_title" href="">Вино Монтез Шардоне Резерв</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="product-card__wrap">
+                        <div class="product-card__title">
+                            <h1 class="block-title">Вино Монтез Шардоне Резерв</h1>
+                            <p class="block-title__inglish">Wine Montes Chardonnay Reserva</p>
+                        </div>
+                        <div class="product-min__info-wrap">
+                            <p class="product-min__info country">Франция</p>
+                            <p class="product-min__info year">1867г.</p>
+                            <p class="product-min__info version">Сухое</p>
+                            <p class="product-min__info size">0,75л.</p>
+                            <p class="product-min__info rate">12%</p>
+                        </div>
+                        <div class="product-min__article">Артикул: <span>09-81412</span></div>
+
+                        <div class="product-card__body">
+                            <div class="product-min__img">
+                                <div class="product-min__plashka sale">-10%</div>
+                                <div class="product-min__plashka available">В наличии</div>
+                                <div class="product-min__plashka favourites">
+                                    <svg>
+                                        <use xlink:href="/images/sprite.svg#favourites-icon-big"></use>
+                                    </svg>
+                                    <p>Добавить в избранное</p>
+                                </div>
+                                <img src="/images/product-min-01.png" alt="Вино Монтез Шардоне Резерв">
+                            </div>
+                            <div class="product-card__specifications specifications">
+                                <div class="specifications__items">
+                                    <div class="specifications__item">
+                                        <span>Страна</span>
+                                        <p>Греция</p>
+                                    </div>
+                                    <div class="specifications__item">
+                                        <span>Объем</span>
+                                        <p>0,75л.</p>
+                                    </div>
+                                    <div class="specifications__item">
+                                        <span>Цвет</span>
+                                        <p>Красное</p>
+                                    </div>
+                                    <div class="specifications__item">
+                                        <span>Бренд</span>
+                                        <p>Бранкотт Истейт</p>
+                                    </div>
+                                    <div class="specifications__item">
+                                        <span>Содержание сахара</span>
+                                        <p>Сладкое</p>
+                                    </div>
+                                    <div class="specifications__item">
+                                        <span>Производитель</span>
+                                        <p>Тсансали</p>
+                                    </div>
+                                    <div class="specifications__item">
+                                        <span>Крепость</span>
+                                        <p>12%</p>
+                                    </div>
+                                </div>
+                                <a href="">Смотреть все характеристики</a>
+                                <div class="vintage">
+                                    <p class="vintage__title">Винтаж</p>
+                                    <div class="vintage__items">
+                                        <div class="vintage__item active">
+                                            <p>2019 г. – 893 р.</p>
+                                            <div class="product-min__plashka available">В наличии</div>
+                                        </div>
+                                        <div class="vintage__item">
+                                            <p>2020 г. – 893 р.</p>
+                                            <div class="product-min__plashka available available_not">Ожидается</div>
+                                        </div>
+                                    </div>
+                                    <p class="vintage__more">Ещё винтажи</p>
+                                    <div class="vintage__items hide">
+                                        <div class="vintage__item">
+                                            <p>2019 г. – 893 р.</p>
+                                            <div class="product-min__plashka available">В наличии</div>
+                                        </div>
+                                        <div class="vintage__item">
+                                            <p>2020 г. – 893 р.</p>
+                                            <div class="product-min__plashka available available_not">Ожидается</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <div class="product-card__price-wrap">
+                                    <p class="product-min__price new"><span>2 740</span> р.</p>
+                                    <div class="product-card__price-old">
+                                        <div class="product-min__plashka sale">-10%</div>
+                                       <p>Старая цена<span class="product-min__price old">3 230 р.</span></p>
+                                    </div>
+                                </div>
+                                <div class="counter">
+                                    <div class="counter__number">
+                                        <span class="counter__minus">-</span>
+                                        <input type="counter__text" value="6" size="5"/>
+                                        <span class="counter__plus">+</span>
+                                    </div>
+                                    <div class="counter__offer">
+                                        <p class="counter__offer-info">При покупке <span>6</span> штук</p>
+                                        <p class="counter__offer-price"><span>1 350</span> р.</p>
+                                    </div>
+                                </div>
+                                <div class="product-min__buttons-wrap in-the-basket">
+                                    <button class="button">
+                                        <svg>
+                                            <use xlink:href="/images/sprite.svg#basket-icon"></use>
+                                        </svg>
+                                        <span>В корзину</span>
+                                    </button>
+                                    <svg class="open-box">
+                                        <use xlink:href="/images/sprite.svg#open-box"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card__footer">
+
+                            <div class="tabs">
+                                <ul class="tabs__caption">
+                                    <li class="active"><p>Характеристики</p></li>
+                                    <li><p>Отзывы <span>23</span></p></li>
+                                </ul>
+            
+                                <div class="tabs__content active">
+                                    <div class="product-card__specifications specifications">
+                                        <div class="specifications__items">
+                                            <div class="specifications__item">
+                                                <span>Страна</span>
+                                                <p>Греция</p>
+                                            </div>
+                                            <div class="specifications__item">
+                                                <span>Объем</span>
+                                                <p>0,75л.</p>
+                                            </div>
+                                            <div class="specifications__item">
+                                                <span>Цвет</span>
+                                                <p>Красное</p>
+                                            </div>
+                                            <div class="specifications__item">
+                                                <span>Бренд</span>
+                                                <p>Бранкотт Истейт</p>
+                                            </div>
+                                            <div class="specifications__item">
+                                                <span>Содержание сахара</span>
+                                                <p>Сладкое</p>
+                                            </div>
+                                            <div class="specifications__item">
+                                                <span>Производитель</span>
+                                                <p>Тсансали</p>
+                                            </div>
+                                            <div class="specifications__item">
+                                                <span>Крепость</span>
+                                                <p>12%</p>
+                                            </div>
+                                            <div class="specifications__item">
+                                                <span>Температура подачи</span>
+                                                <p>18 - 20</p>
+                                            </div>
+                                        </div>
+                                    </div>                   
+                                </div>
+            
+                                <div class="tabs__content">
+                                    <p class="specifications__title specifications__title_big">Описание</p>
+                                    <div class="specifications__description" itemprop="description">
+                                        Письменный стол левый для кабинета руководителя Фокус Директор – отличное сочетание стиля и высокой технологичности. Столешница выполнена из 38 мм ДСП и дополнена 2 мм акриловой противоударной кромкой, создающей визуальный эффект среза дерева и подчеркивающей границы рабочего стола. Ширина модели - 180 см, высота – 76 см, глубина 94,8 см. Возможность регулировки высоты опор стола решает проблему неровности полов. Мебель из коллекции Focus Director создает атмосферу прогрессивного делового пространства в кабинете руководителя. Купить стол можно в интернет-магазине или в фирменном салоне.                        </div>
+            
+                                    <p class="specifications__p">*Информация о технических характеристиках, комплекте
+                                        поставки, стране
+                                        изготовления и внешнем виде товара носит справочный характер и основывается на
+                                        последних доступных к
+                                        моменту публикации сведениях, сообщенных производителем и могут быть им изменены
+                                        в любой момент. Все цены,
+                                        указанные на сайте приведены как справочная информация и не являются публичной
+                                        офертой, определяемой положениями
+                                        статьи 437 Гражданского кодекса Российской Федерации и могут быть изменены в
+                                        любое время без предупреждения. Для
+                                        получения подробной информации о стоимости, сроках и условиях поставки просьба
+                                        воспользоваться формой обратной
+                                        связи или формой заказа товара.</p>                    
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./js/script.js" defer></script>
+        <script src="./js/product-card.js" defer></script>
+    </body>
+
+</html>

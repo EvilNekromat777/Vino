@@ -43,31 +43,31 @@
         font-weight: bold;
         font-size: 20px;
         color: $text-bold;
-        margin-right: 10px;
 
         &-wrap{
             display: flex;
             align-items: center;
             margin-top: 14px;
-    
-            .old{
-                font-weight: normal;
-                font-size: 16px;
-                color: $text-grey;
-                padding-top: 3px;
-                position: relative;
-    
-                &::before{
-                    content: "";
-                    position: absolute;
-                    top: 60%;
-                    left: -1px;
-                    display: block;
-                    width: 58px;
-                    height: 1px;
-                    z-index: 2;
-                    background-color: $text-grey;
-                }
+        }
+
+        &.old{
+            font-weight: normal;
+            font-size: 16px;
+            color: $text-grey;
+            padding-top: 3px;
+            position: relative;
+            margin-left: 10px;
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 60%;
+                left: -1px;
+                display: block;
+                width: 58px;
+                height: 1px;
+                z-index: 2;
+                background-color: $text-grey;
             }
         }
     }
@@ -91,6 +91,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 3;
     }
 
     &__change-amount{
@@ -121,26 +122,29 @@
         }
     }
 
-    .sale{
-        font-weight: bold;
-        font-size: 16px;
-        background: $button-catalog;
-        border-radius: 5px;
-        left: 30px;
-        width: 50px;
-        height: 26px;
+    &:hover{
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        cursor: pointer;
+
+        .favourites{
+            opacity: 1;
+        }
+
+        .button{
+            background: $button-active;
+        }
+
+        .year{
+            background: $button-catalog;
+            color: $text-white;
+        }
     }
 
-    .available{
-        background: #3CAA3C;
-        border-radius: 4px;
-        font-size: 10px;
-        right: 30px;
-        width: 60px;
-        height: 16px;
+    &.active{
 
-        &_not{
-            background: $gray;
+        .counter{
+            display: flex;
         }
     }
 
@@ -201,70 +205,46 @@
     .year{
         transition: all 0.5s ease 0s;
     }
-
-    &:hover{
-        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
-        border-radius: 10px;
-        cursor: pointer;
-
-        .favourites{
-            opacity: 1;
-        }
-
-        .button{
-            background: $button-active;
-        }
-
-        .year{
-            background: $button-catalog;
-            color: $text-white;
-        }
-    }
-
-    .counter{
-        align-items: center;
-        margin-top: 14px;
-        display: none;
-
-        &__number{
-            width: 120px;
-            height: 40px;
-            background: $corporat-red;
-            border-radius: 5px;
-            margin: 0 14px 0 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 15px;
-    
-            span{
-                font-weight: normal;
-                font-size: 16px;
-                color: $text-white;
-            }
-    
-            input{
-                background: $corporat-red;
-                color: $text-white;
-                text-align: center;
-            }
-        }
-
-        p{
-            font-size: 16px;
-            color: $text-lite-grey;
-
-            span{
-                color: $corporat-red;
-            }
-        }
-    }
 }
 
-.product-min.active{
+.counter{
+    align-items: center;
+    margin-top: 14px;
+    display: none;
 
-    .counter{
+    &__number{
+        width: 120px;
+        height: 40px;
+        background: $corporat-red;
+        border-radius: 5px;
+        margin: 0 14px 0 0;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px;
+
+        span{
+            font-weight: normal;
+            font-size: 16px;
+            color: $text-white;
+            padding: 10px 15px;
+        }
+
+        input{
+            background: $corporat-red;
+            color: $text-white;
+            text-align: center;
+            max-width: 40px;
+        }
+    }
+
+    p{
+        font-size: 16px;
+        color: $text-lite-grey;
+
+        span{
+            color: $corporat-red;
+        }
     }
 }
 

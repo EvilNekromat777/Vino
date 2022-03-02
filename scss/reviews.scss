@@ -1,4 +1,5 @@
 .reviews{
+    position: relative;
 
     &__item{
         display: flex;
@@ -36,5 +37,60 @@
         line-height: 140%;
         color: $text-grey;
         margin-bottom: 16px;
+    }
+
+    &__rating{
+        width: 105px;
+    }
+
+    &__more{
+        font-size: 14px;
+        color: $text-red;
+        margin-top: 22px;
+        display: block;
+        cursor: pointer;
+    }
+
+    img{
+        width: 233px;
+        height: 155px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+}
+
+.rating{
+
+    &__item{
+        fill: #fff;
+        stroke: $corporat-red;
+        width: 14px;
+        height: 14px;
+        margin-right: 1px;
+        cursor: pointer;
+
+        &--voted{
+            fill: $corporat-red;
+        }
+    }
+}
+
+.likes{
+    margin-top: 10px;
+    display: flex;
+
+    input{
+        width: 20px;
+        font-size: 14px;
+        color: $text-grey;
+        margin-right: 10px;
+    }
+
+    svg{
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        cursor: pointer;
     }
 }

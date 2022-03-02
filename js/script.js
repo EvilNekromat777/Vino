@@ -89,3 +89,17 @@ $(".menu ul li").click(function(e) {
 });
 
 
+// Сердечко закрашивается "Добавить в избранное"
+$(".favourites").click(function(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+  });
+
+
+// Открытие целиковой карточки товара при клике на превью
+$(".product-min").click(function() {
+document.location.href = "product-card.html";
+}); 
+
+
+

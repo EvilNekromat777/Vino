@@ -74,45 +74,6 @@
         margin-top: 70px;
     }
 
-    .breadcrumbs{
-
-        &__list{
-            display: flex;
-            margin-top: 17px;
-
-            li{
-                margin-right: 10px;
-
-                &::after{
-                    content: "";
-                    display: inline-block;
-                    width: 5px;
-                    height: 5px;
-                    margin: -3px 7px 3px;
-                    border: solid #7B7B7B;
-                    border-width: 0 2px 2px 0;
-                    transform: rotate(-45deg);
-                }
-
-                &:last-child{
-
-                    &::after{
-                        content: none;
-                    }
-                }
-            }
-        }
-
-        &__item{
-            font-size: 14px;
-            color: $text-grey;
-
-            &_title{
-                color: $text-bold;
-            }
-        }
-    }
-
     .product-min{
     
         &__info{
@@ -178,26 +139,6 @@
             border-radius: 4px;
             font-size: 12px;
         }
-
-        &__plashka.favourites{
-            top: 60px;
-            right: 19px;
-            cursor: pointer;
-            display: block;
-
-            svg{
-                width: 47px;
-                height: 40px;
-            }
-
-            p{
-                font-size: 12px;
-                line-height: 120%;
-                color: $text-red;
-                width: 65px;
-                margin-top: 10px;
-            }
-        }
     }
 
     .counter{
@@ -223,6 +164,42 @@
                 font-weight: bold;
                 font-size: 22px;
                 color: $corporat-red;
+            }
+        }
+    }
+
+    .favourites{
+        top: 60px;
+        right: 19px;
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        width: 65px;
+        opacity: 1;
+
+        svg{
+            width: 47px;
+            height: 40px;
+            stroke: $corporat-red;
+            fill: $background-white;
+        }
+
+        p{
+            font-size: 12px;
+            line-height: 120%;
+            color: $text-red;
+            width: 65px;
+            margin-top: 10px;
+        }
+
+        &.active{
+
+            svg{
+                fill: $corporat-red;
+            }
+
+            p{
+                display: none;
             }
         }
     }

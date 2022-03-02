@@ -148,32 +148,31 @@
         }
     }
 
-    .favourites{
-        top: 56px;
-        right: 30px;
-        opacity: 0;
-        transition: opacity 0.5s ease 0s;
+    // .favourites{
+    //     top: 56px;
+    //     right: 30px;
+    //     opacity: 0;
+    //     transition: opacity 0.5s ease 0s;
 
-        svg{
-            width: 23px;
-            height: 20px;
+    //     svg{
+    //         width: 23px;
+    //         height: 20px;
 
-            use{
-                stroke: $corporat-red;
-            }
-        }
-    }
+    //         use{
+    //             stroke: $corporat-red;
+    //         }
+    //     }
 
-    .favourites.active{
+    //     &.active{
 
-        svg{
-            background: red;
-
-            use{
-                fill: $corporat-red;
-            }
-        }
-    }
+    //         svg{
+    
+    //             use{
+    //                 fill: $corporat-red;
+    //             }
+    //         }
+    //     }
+    // }
 
     .block-title{
         font-weight: 500;

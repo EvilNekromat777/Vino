@@ -36,13 +36,6 @@
   };
 
 
-  // Сердечко закрашивается красным
-$(".product-min .favourites").click(function(e) {
-    e.preventDefault();
-    $(this).toggleClass('active');
-  })
-
-
   // При нажатии кнопки "Добавить в корзину" появляется счетчик
 $(".in-the-basket").click(function(e) {
     e.preventDefault();
@@ -51,7 +44,4 @@ $(".in-the-basket").click(function(e) {
   })
 
 
-   // Открытие целиковой карточки товара при клике на превью
-   $(".product-min").click(function() {
-    document.location.href = "product-card.html";
-  })
+ 

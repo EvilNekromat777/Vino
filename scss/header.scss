@@ -36,6 +36,7 @@
 
 	&__icons{
 		display: flex;
+		position: relative;
 	}
 
 	&__icon-group{
@@ -79,11 +80,17 @@
 	}
 
 	.favourites{
+		top: 0;
+		right: 0;
+		opacity: 1;
 
 		svg{
+			width: 29px;
+			height: 26px;
 
 			use{
-				stroke: #fff;
+				fill: transparent;
+				stroke: $background-white;
 			}
 		}
 	}

@@ -1,0 +1,124 @@
+.basket-page{
+
+    &__wrap{
+        margin: 12px 0px 0px 0px;
+    }
+
+    &__title{
+        display: flex;
+        align-items: center;
+    }
+
+    &__quantity{
+        margin: 5px 0px 0px 15px;
+        font-size: 14px;
+        line-height: 16px;
+        color: $text-grey;
+    }
+
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 22px;
+    }
+
+    &__items{
+        width: 70%;
+    }
+
+    &__result{
+        border: 1px solid red;
+        width: 28%;
+    }
+
+    &__item{
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.13);
+        border-radius: 5px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px 10px 48px;
+        position: relative;
+
+        &-left-block{
+            display: flex;
+        }
+
+        &-right-block{
+            display: flex;
+        }
+
+        &-price{
+            padding: 35px 0px 0px 0px;
+            text-align: end;
+        }
+
+        &:hover{
+            box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.13);
+        }
+    }
+
+    &__img{
+
+        img{
+            width: 111px;
+            height: 180px;
+            margin-right: 48px;
+        }
+    }
+
+    &__description{
+
+        .block-title{
+            font-size: 16px;
+            margin-bottom: 5px;
+
+            &__inglish{
+                font-size: 14px;
+                color: $text-grey;
+            }
+        }
+    }
+
+    .sale{
+        top: 20px;
+        left: 20px;
+    }
+
+    .counter{
+        display: block;
+        text-align: center;
+        margin-right: 50px;
+        margin: 35px 50px 0 0;
+
+        &__number{
+            width: 130px;
+            margin: 0px 0px 17px 0px;
+            cursor: pointer;
+        }
+
+        button{
+            background: transparent;
+            color: $text-grey;
+            font-size: 14px;
+
+            svg{
+                width: 16px;
+                height: 16px;
+                margin-right: 8px;
+
+                use{
+                    stroke: $text-grey;
+                }
+            }
+
+            &:hover{
+                color: $button-active;
+
+                use{
+                    stroke: $button-active;
+                }
+            }
+        }
+    }
+}

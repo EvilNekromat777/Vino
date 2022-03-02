@@ -1,0 +1,46 @@
+.breadcrumbs{
+
+    &__list{
+        display: flex;
+        margin-top: 17px;
+
+        li{
+            margin-right: 10px;
+
+            a{
+                color: $text-grey;
+            }
+
+            &::after{
+                content: "";
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                margin: -3px 7px 3px;
+                border: solid #7B7B7B;
+                border-width: 0 2px 2px 0;
+                transform: rotate(-45deg);
+            }
+
+            &:last-child{
+
+                a{
+                    color: $text-bold;
+                }
+
+                &::after{
+                    content: none;
+                }
+            }
+        }
+    }
+
+    &__item{
+        font-size: 14px;
+        color: $text-grey;
+
+        &_title{
+            color: $text-bold;
+        }
+    }
+}

@@ -24,3 +24,31 @@
         color: $text-white
     }
 }
+
+// Иконка избранного (сердечко)
+.favourites{
+    top: 56px;
+    right: 30px;
+    opacity: 0;
+    transition: opacity 0.5s ease 0s;
+
+    svg{
+        width: 23px;
+        height: 20px;
+
+        use{
+            stroke: $corporat-red;
+            fill: $background-white;
+        }
+    }
+
+    &.active{
+
+        svg{
+
+            use{
+                fill: $corporat-red;
+            }
+        }
+    }
+}

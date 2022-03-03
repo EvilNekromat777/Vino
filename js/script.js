@@ -60,6 +60,7 @@ $(".menu ul li").click(function(e) {
     e.preventDefault();
     $(".menu ul li").removeClass('active');
     $(this).addClass('active');
+    document.location.href = "catalog-page.html";
   })
 
 
@@ -164,6 +165,13 @@ $(".basket-page__item .counter button").click(function(e) {
   $(this).parents('.basket-page__item').addClass('hide');
 })
 
+
+// Переключение product-kind-btns
+$(".product-kind-btns__item").click(function(e) {
+  e.preventDefault();
+  $(".product-kind-btns__item").removeClass('active');
+  $(this).addClass('active');
+})
 
 
 

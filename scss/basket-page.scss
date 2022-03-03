@@ -1,21 +1,5 @@
 .basket-page{
 
-    &__wrap{
-        margin: 12px 0px 0px 0px;
-    }
-
-    &__title{
-        display: flex;
-        align-items: center;
-    }
-
-    &__quantity{
-        margin: 5px 0px 0px 15px;
-        font-size: 14px;
-        line-height: 16px;
-        color: $text-grey;
-    }
-
     &__body{
         display: flex;
         justify-content: space-between;
@@ -205,4 +189,17 @@
         top: 20px;
         left: 20px;
     }
+}
+
+.quantity-stroke{
+    margin: 5px 0px 0px 15px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-grey;
+}
+
+.title-block{
+    display: flex;
+    align-items: center;
+    margin: 12px 0px 0px 0px;
 }

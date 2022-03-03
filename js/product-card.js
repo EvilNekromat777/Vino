@@ -38,41 +38,6 @@ $(".vintage__item").click(function(e) {
   })
 
 
-  // Слайдер "С этим товаром покупают"
-   const swiperTogether = new Swiper('.swiper__together', {
-    loop: true,
-    slidesPerView: 4,
-    loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: '.swiper-button-next__together',
-      prevEl: '.swiper-button-prev__together',
-    }
-  });
-
-
-  // Слайдер "Похожие товары"
-  const swiperSimilar = new Swiper('.swiper__similar', {
-    loop: true,
-    slidesPerView: 4,
-    loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: '.swiper-button-next__similar',
-      prevEl: '.swiper-button-prev__similar',
-    }
-  });
-
-
-  // Слайдер "Рекомендуемые товары"
-  const swiperRecommended = new Swiper('.swiper__recommended', {
-    loop: true,
-    slidesPerView: 4,
-    loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: '.swiper-button-next__recommended',
-      prevEl: '.swiper-button-prev__recommended',
-    }
-  });
-
   
  // Лайки и дизлайки на отзывах
 $(document).ready(function() {

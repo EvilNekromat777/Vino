@@ -103,3 +103,68 @@ document.location.href = "product-card.html";
 
 
 
+  // Слайдер "Рекомендуемые товары"
+  const swiperRecommended = new Swiper('.swiper__recommended', {
+    loop: true,
+    slidesPerView: 4,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.swiper-button-next__recommended',
+    }
+  });
+
+
+  // Слайдер "Похожие товары"
+  const swiperSimilar = new Swiper('.swiper__similar', {
+    loop: true,
+    slidesPerView: 4,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.swiper-button-next__similar',
+      prevEl: '.swiper-button-prev__similar',
+    }
+  });
+
+
+  // Слайдер "С этим товаром покупают"
+  const swiperTogether = new Swiper('.swiper__together', {
+    loop: true,
+    slidesPerView: 4,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.swiper-button-next__together',
+      prevEl: '.swiper-button-prev__together',
+    }
+  });
+
+
+    // При нажатии кнопки "Добавить в корзину" появляется счетчик
+$(".product-min .in-the-basket").click(function(e) {
+    e.preventDefault();
+    $(this).addClass('hide');
+    $(this).parent().addClass('active');
+  })
+
+
+      // Добавить промокод
+$(".basket-page__promocode-add").click(function(e) {
+  e.preventDefault();
+  $('.basket-page__promocode-input').toggleClass('hide');
+  if($('.basket-page__promocode-input').hasClass('hide')){
+    $('.basket-page__promocode-add').text('Добавить');
+  } else{
+    $('.basket-page__promocode-add').text('Закрыть');
+  }
+})
+
+
+// Удаление из корзины
+$(".basket-page__item .counter button").click(function(e) {
+  e.preventDefault();
+  $(this).parents('.basket-page__item').addClass('hide');
+})
+
+
+
+
+

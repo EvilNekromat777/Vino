@@ -68,3 +68,77 @@
     }
 
 }
+
+
+// Галочка Согласие внизу формы
+.form__agree-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 29px;
+    position: relative;
+}
+
+.form__agree-checkbox {
+    position: relative;
+    display: block;
+    margin-left: 25px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    color: #828282;
+
+    &:before{
+        content: "";
+        display: block;
+        width: 18px;
+        height: 18px;
+        border-radius: 5px;
+        background-color: #f3f3f3;
+        position: absolute;
+        top: 1px;
+        left: -25px;
+    }
+}
+
+.form__agree-checkbox-input:checked + .form__agree-checkbox {
+
+    &:after{
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: -20px;
+        height: 9px;
+        width: 8px;
+        border-bottom: 2px solid $background-white;
+        border-right: 2px solid $background-white;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    &:before {
+        background-color: $corporat-red;
+    }
+}
+
+.form__agree-checkbox-input{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 50;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.form__agree-text{
+    font-size: 14px;
+    color: $text-grey;
+    line-height: 140%;
+
+    a{
+        font-size: 14px;
+        color: $text-red;
+        line-height: 140%;
+    }
+}

@@ -36,12 +36,7 @@
   };
 
 
-  // При нажатии кнопки "Добавить в корзину" появляется счетчик
-$(".in-the-basket").click(function(e) {
-    e.preventDefault();
-    $(this).addClass('hide');
-    $(this).parent().addClass('active');
-  })
+
 
 
  

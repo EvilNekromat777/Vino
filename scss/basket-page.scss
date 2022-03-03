@@ -27,8 +27,92 @@
     }
 
     &__result{
-        border: 1px solid red;
         width: 28%;
+
+        &-wrap{
+            border: 1px solid $border;
+            padding: 25px 20px 20px 18px;
+        }
+
+        &-p{
+            font-size: 16px;
+            color: $text-grey;
+        }
+
+        &-number{
+            font-size: 16px;
+            color: $text-bold;
+        }
+
+        &-block{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 13px;
+        }
+
+        .title{
+            margin-bottom: 20px;
+
+            p{
+                font-weight: 500;
+                font-size: 24px;
+                color: $text-bold;
+            }
+
+            span{
+                font-weight: bold;
+                font-size: 30px;
+                color: $text-red;
+            }
+        }
+
+        .button{
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+        }
+    }
+
+    &__promocode{
+        border-top: 1px solid #E2E2E2;
+        border-bottom: 1px solid #E2E2E2;
+        margin: 26px 0px 30px 0px;
+        padding: 27px 0px;
+
+        &-wrap{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-input{
+            margin: 16px 0px 0px 0px;
+
+            input{
+                height: 40px;
+                border-radius: 5px;
+                border: 1px solid $border;
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0px 0px 0px 20px;
+            }
+        }
+
+        &-apply{
+            height: 40px;
+            background: $background-lite-gray;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            color: $text-grey;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+
+        &-add{
+            background: transparent;
+            font-size: 16px;
+            color: $text-red;
+        }
     }
 
     &__item{
@@ -55,6 +139,43 @@
 
         &:hover{
             box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.13);
+        }
+
+        .counter{
+            display: block;
+            text-align: center;
+            margin-right: 50px;
+            margin: 35px 50px 0 0;
+    
+            &__number{
+                width: 130px;
+                margin: 0px 0px 17px 0px;
+                cursor: pointer;
+            }
+    
+            button{
+                background: transparent;
+                color: $text-grey;
+                font-size: 14px;
+    
+                svg{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 8px;
+    
+                    use{
+                        stroke: $text-grey;
+                    }
+                }
+    
+                &:hover{
+                    color: $button-active;
+    
+                    use{
+                        stroke: $button-active;
+                    }
+                }
+            }
         }
     }
 
@@ -83,42 +204,5 @@
     .sale{
         top: 20px;
         left: 20px;
-    }
-
-    .counter{
-        display: block;
-        text-align: center;
-        margin-right: 50px;
-        margin: 35px 50px 0 0;
-
-        &__number{
-            width: 130px;
-            margin: 0px 0px 17px 0px;
-            cursor: pointer;
-        }
-
-        button{
-            background: transparent;
-            color: $text-grey;
-            font-size: 14px;
-
-            svg{
-                width: 16px;
-                height: 16px;
-                margin-right: 8px;
-
-                use{
-                    stroke: $text-grey;
-                }
-            }
-
-            &:hover{
-                color: $button-active;
-
-                use{
-                    stroke: $button-active;
-                }
-            }
-        }
     }
 }

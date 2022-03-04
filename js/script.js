@@ -58,10 +58,22 @@ if (isMobile.any()) {
 // Переключение вкладок меню
 $(".menu ul li").click(function(e) {
     e.preventDefault();
-    $(".menu ul li").removeClass('active');
+
+    if($(this).hasClass('tab-vino')){
+      document.location.href = "catalog-page.html";
+    } else{
+      $(".menu ul li").removeClass('active');
+      $(this).addClass('active');
+    }
+  });
+
+
+  // Переключение product-kind-btns
+$(".product-kind-btns__item").click(function(e) {
+  e.preventDefault();
+    $(".product-kind-btns__item").removeClass('active');
     $(this).addClass('active');
-    document.location.href = "catalog-page.html";
-  })
+});
 
 
   // Мобильный футер
@@ -104,41 +116,6 @@ document.location.href = "product-card.html";
 
 
 
-  // Слайдер "Рекомендуемые товары"
-  const swiperRecommended = new Swiper('.swiper__recommended', {
-    loop: true,
-    slidesPerView: 4,
-    loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: '.swiper-button-next__recommended',
-    }
-  });
-
-
-  // Слайдер "Похожие товары"
-  const swiperSimilar = new Swiper('.swiper__similar', {
-    loop: true,
-    slidesPerView: 4,
-    loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: '.swiper-button-next__similar',
-      prevEl: '.swiper-button-prev__similar',
-    }
-  });
-
-
-  // Слайдер "С этим товаром покупают"
-  const swiperTogether = new Swiper('.swiper__together', {
-    loop: true,
-    slidesPerView: 4,
-    loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: '.swiper-button-next__together',
-      prevEl: '.swiper-button-prev__together',
-    }
-  });
-
-
     // При нажатии кнопки "Добавить в корзину" появляется счетчик
 $(".product-min .in-the-basket").click(function(e) {
     e.preventDefault();
@@ -175,4 +152,20 @@ $(".product-kind-btns__item").click(function(e) {
 
 
 
+  // Модалка "Вход - регистрация"
+  $(".cabinet").click(function(e) {
+    e.preventDefault();
+      $(".modal__entrance").addClass('active');
+  });
+  $(".modal__close").click(function(e) {
+    e.preventDefault();
+    $(".modal__entrance").removeClass('active');
+    $('.modal__password-recovery').addClass('hide');
+  });
 
+
+  // Модалка регистрации - "забыли пароль?"
+$(".form__forgot").click(function(e) {
+  e.preventDefault();
+  $('.modal__password-recovery').removeClass('hide');
+})

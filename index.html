@@ -85,10 +85,10 @@
 							<nav class="menu">                                                                     
 								<ul>
 									<li class="active">
-										<a href="">Вино</a>
-									</li>
-									<li>
 										<a href="">Шампанское и игристые вина</a>
+									</li>
+									<li class="tab-vino">
+										<a>Вино</a>
 									</li>
 									<li>
 										<a href="">Виски</a>
@@ -1407,7 +1407,7 @@
 								<li><a href="#">Виски</a></li>
 								<li><a href="#">Коньяк</a></li>
 								<li><a href="#">Шампанское</a></li>
-								<li><a href="#">Вино</a></li>
+								<li><a href="catalog-page.html">Вино</a></li>
 								<li><a href="#">Маккалан</a></li>
 								<li><a href="#">Хеннесси</a></li>
 								<li><a href="#">Чивас Ригал</a></li>
@@ -1447,8 +1447,7 @@
 			
 		</footer>
 
-
-		<div class="modal">
+		<div class="modal modal__confirm-age">
 			<div class="modal__wrap">
 				<div class="modal__content proof-of-age">
 					<div class="proof-of-age__header">
@@ -1466,12 +1465,53 @@
 			</div>
 		</div>
 
+		<div class="modal modal__entrance">
+			<div class="modal__wrap">
+				<div class="modal__close">
+					<svg width="24" height="24" class="icon-close">
+						<use xlink:href="./images/sprite.svg#modal-close"></use>
+					</svg>
+				</div>
+				<div class="modal__body">
+					<p class="modal__title">Вход</p>
+					<form class="form">
+						<div class="form__row">
+							<input class="form__input" type="text" name="USER_LOGIN" class="required" placeholder="Email" value="">
+						</div>
+						<div class="form__row">
+							<input class="form__input" type="password" name="USER_PASSWORD" class="required" placeholder="Пароль" autocomplete="off">
+						</div>
+						<div class="form__row form__row_checkbox">
+							<div class="form__agree-wrap">
+								<input type="checkbox" class="form__agree-checkbox-input" required="" green="Y" checked="">
+								<label class="form__agree-checkbox">Запомнить меня</label>
+							</div>
+							<span class="form__forgot">Забыли пароль?</span>
+						</div>
+						<div class="form__row">
+							<button class="button" type="submit">Войти</button>
+						</div>
+					</form>
+				</div>
+				<button class="form__registration">Зарегистрироваться</button>
+				<div class="modal__password-recovery hide">
+					<p class="modal__title">Восстановление пароля</p>
+					<div class="form__row">
+						<input class="form__input" type="text" name="USER_LOGIN" class="required" placeholder="Email" value="">
+					</div>
+					<button class="button" type="submit">Восстановить пароль</button>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-	<script src="./js/script.js" defer></script>
+	
+	<script src="./js/slider.js" defer></script>
 	<script src="./js/main-page.js" defer></script>
+	<script src="./js/script.js" defer></script>
 </body>
 
 </html>

@@ -385,6 +385,7 @@ main {
   padding: 0 16px;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  cursor: pointer;
 }
 .menu ul .active {
   background: #98001B;
@@ -471,6 +472,64 @@ main {
 .catalog-page .button__more {
   width: 200px;
   margin: 0 auto;
+}
+
+.pager {
+  margin: 30px 0px 70px 0px;
+}
+.pager__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pager__item {
+  border: 1px solid #B6B6B6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.pager__item.active {
+  background: #BC0021;
+}
+.pager__item.active a {
+  color: #FFFFFF;
+}
+.pager__item.active a span {
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.pager__item a {
+  font-size: 16px;
+  color: #7B7B7B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.pager__item a span {
+  height: 6px;
+  width: 6px;
+  border-bottom: 2px solid #7B7B7B;
+  border-right: 2px solid #7B7B7B;
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
+  margin: 0px 8px 0px 0px;
+}
+.pager__item_next a span {
+  margin: 0px 0px 0px 8px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .products {
@@ -1138,11 +1197,99 @@ main {
           box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   padding: 48px 50px;
+  position: relative;
+}
+.modal__close {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.modal__close svg {
+  width: 20px;
+  height: 20px;
 }
 
-.modal.active {
+.modal__confirm-age.active,
+.modal__entrance.active {
   opacity: 1;
   visibility: visible;
+}
+
+.modal__entrance .modal__wrap {
+  width: 460px;
+  padding: 0px 0px 0px 0px;
+}
+.modal__entrance .modal__body {
+  padding: 25px 20px 0px 28px;
+}
+.modal__entrance .modal__title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #2E000B;
+}
+.modal__entrance .modal__password-recovery {
+  padding: 25px 30px 30px;
+}
+.modal__entrance .modal__password-recovery .modal__title {
+  margin-bottom: 24px;
+}
+.modal__entrance .modal__password-recovery .button {
+  width: 100%;
+}
+.modal__entrance .modal__password-recovery .form__row {
+  margin: 0px 0px 30px 0px;
+}
+.modal__entrance .form {
+  margin: 44px 0px 0px 0px;
+}
+.modal__entrance .form__row {
+  margin: 0px 0px 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal__entrance .form__input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #B6B6B6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0px 0px 0px 19px;
+}
+.modal__entrance .form__forgot {
+  font-size: 14px;
+  color: #7B7B7B;
+  cursor: pointer;
+}
+.modal__entrance .form__registration {
+  background: #E2E2E2;
+  height: 50px;
+  width: 100%;
+  font-size: 14px;
+  color: #BC0021;
+  -webkit-transition: background 0.5s ease 0s;
+  transition: background 0.5s ease 0s;
+}
+.modal__entrance .form__registration:hover {
+  background: #AEAEAE;
+}
+.modal__entrance .form__agree-wrap {
+  margin: 0px 0px 0px 0px;
+}
+.modal__entrance .form__agree-checkbox {
+  line-height: 19px;
+}
+.modal__entrance .form .button {
+  width: 100%;
+  margin: 3px 0px 0px 0px;
 }
 
 .proof-of-age__header {

@@ -22,14 +22,119 @@
         box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
         padding: 48px 50px;
+        position: relative;
+    }
+
+    &__close{
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        svg{
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 
-.modal.active{
+.modal__confirm-age.active,
+.modal__entrance.active{
     opacity: 1;
     visibility: visible;
 }
 
+.modal__entrance{
+
+    .modal{
+
+        &__wrap{
+            width: 460px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        &__body{
+            padding: 25px 20px 0px 28px;
+        }
+
+        &__title{
+            font-weight: 500;
+            font-size: 24px;
+            color: $text-bold;
+        }
+
+        &__password-recovery{
+            padding: 25px 30px 30px;
+
+            .modal__title{
+                margin-bottom: 24px;
+            }
+
+            .button{
+                width: 100%;
+            }
+
+            .form__row{
+                margin: 0px 0px 30px 0px;
+            }
+        }
+    }
+
+    .form{
+        margin: 44px 0px 0px 0px;
+
+        &__row{
+            margin: 0px 0px 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+
+        &__input{
+            height: 40px;
+            width: 100%;
+            border: 1px solid $border;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 0px 0px 0px 19px;
+        }
+
+        &__forgot{
+            font-size: 14px;
+            color: $text-grey;
+            cursor: pointer;
+        }
+
+        &__registration{
+            background: #E2E2E2;
+            height: 50px;
+            width: 100%;
+            font-size: 14px;
+            color: $text-red;
+            transition: background 0.5s ease 0s;
+
+            &:hover{
+                background: $gray;
+            }
+        }
+
+        &__agree{
+
+            &-wrap{
+                margin: 0px 0px 0px 0px;
+            }
+
+            &-checkbox{
+                line-height: 19px;
+            }
+        } 
+
+        .button{
+            width: 100%;
+            margin: 3px 0px 0px 0px;
+        }
+    }
+}
 
 
 .proof-of-age{

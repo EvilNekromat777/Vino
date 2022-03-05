@@ -327,11 +327,73 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  border-radius: 5px;
+}
+.search-form.active .search-form__select {
+  display: block;
+}
+.search-form.active .search-input {
+  border-radius: 5px 0px 0px 0px;
+}
+.search-form__select {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.13);
+  border-radius: 0px 0px 5px 5px;
+  z-index: 10;
+}
+.search-form__select-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2E000B;
+  line-height: 260%;
+  padding: 0px 0px 0px 19px;
+}
+.search-form__select-item {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 0px 0px 19px;
+}
+.search-form__select-item a {
+  font-size: 14px;
+  color: #686868;
+  margin-right: 10px;
+}
+.search-form__select-item .product-min__info {
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 5px;
+}
+.search-form__select-item.active {
+  background: #E2E2E2;
+}
+.search-form__select-item.active a {
+  color: #2E000B;
+}
+.search-form__select-item.active .product-min__info {
+  background: #FFFFFF;
 }
 .search-input {
   height: 40px;
   width: 318px;
   padding-left: 20px;
+  border-radius: 5px 0px 0px 5px;
 }
 .search-button-div {
   width: 60px;
@@ -345,6 +407,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 0px 5px 5px 0px;
 }
 .search-button-div button {
   background: transparent;
@@ -473,6 +536,14 @@ main {
   width: 200px;
   margin: 0 auto;
 }
+.catalog-page .title-block__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
 .pager {
   margin: 30px 0px 70px 0px;
@@ -530,6 +601,102 @@ main {
   margin: 0px 0px 0px 8px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.sorting-min {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sorting-min p {
+  font-size: 14px;
+  color: #7B7B7B;
+  margin-right: 9px;
+}
+.sorting-min.active .sorting-min__filter {
+  display: block;
+}
+.sorting-min.active .sorting-min__button {
+  background: #98001B;
+  border-radius: 5px 5px 0px 0px;
+  color: #FFFFFF;
+}
+.sorting-min.active .sorting-min__button::after {
+  top: 19px;
+  border-bottom: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.sorting-min__filter {
+  border: 1px solid #B6B6B6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px 0px 5px 5px;
+  width: 169px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 10;
+  background: #FFFFFF;
+  display: none;
+}
+.sorting-min__filter a {
+  color: #686868;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 0px 0px 19px;
+  height: 40px;
+  cursor: pointer;
+}
+.sorting-min__filter a.active {
+  background: #E2E2E2;
+  color: #98001B;
+}
+.sorting-min__button {
+  width: 169px;
+  height: 40px;
+  padding: 0px 18px 0px 19px;
+  font-size: 14px;
+  background: #FFFFFF;
+  color: #7B7B7B;
+  border: 1px solid #B6B6B6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.sorting-min__button::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  height: 4px;
+  width: 4px;
+  border-bottom: 1px solid #7B7B7B;
+  border-right: 1px solid #7B7B7B;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.sorting-min__wrap {
+  position: relative;
 }
 
 .products {
@@ -1209,41 +1376,49 @@ main {
   width: 20px;
   height: 20px;
 }
-
-.modal__confirm-age.active,
-.modal__entrance.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal__entrance .modal__wrap {
-  width: 460px;
-  padding: 0px 0px 0px 0px;
-}
-.modal__entrance .modal__body {
+.modal__body {
   padding: 25px 20px 0px 28px;
 }
-.modal__entrance .modal__title {
+.modal__title {
   font-weight: 500;
   font-size: 24px;
   color: #2E000B;
 }
-.modal__entrance .modal__password-recovery {
+.modal__password-recovery {
   padding: 25px 30px 30px;
 }
-.modal__entrance .modal__password-recovery .modal__title {
+.modal__password-recovery .modal__title {
   margin-bottom: 24px;
 }
-.modal__entrance .modal__password-recovery .button {
+.modal__password-recovery .button {
   width: 100%;
 }
-.modal__entrance .modal__password-recovery .form__row {
+.modal__password-recovery .form__row {
   margin: 0px 0px 30px 0px;
 }
-.modal__entrance .form {
+
+.modal__confirm-age.active,
+.modal__entrance.active,
+.modal__registration.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__entrance .modal__wrap,
+.modal__registration .modal__wrap {
+  width: 460px;
+  padding: 0px 0px 0px 0px;
+}
+.modal__entrance .modal__body,
+.modal__registration .modal__body {
+  padding: 25px 30px 30px 30px;
+}
+.modal__entrance .form,
+.modal__registration .form {
   margin: 44px 0px 0px 0px;
 }
-.modal__entrance .form__row {
+.modal__entrance .form__row,
+.modal__registration .form__row {
   margin: 0px 0px 20px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1255,7 +1430,17 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-.modal__entrance .form__input {
+.modal__entrance .form__row_select,
+.modal__registration .form__row_select {
+  display: block;
+}
+.modal__entrance .form__row_select .modal__title,
+.modal__registration .form__row_select .modal__title {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.modal__entrance .form__input,
+.modal__registration .form__input {
   height: 40px;
   width: 100%;
   border: 1px solid #B6B6B6;
@@ -1264,12 +1449,14 @@ main {
   border-radius: 5px;
   padding: 0px 0px 0px 19px;
 }
-.modal__entrance .form__forgot {
+.modal__entrance .form__forgot,
+.modal__registration .form__forgot {
   font-size: 14px;
   color: #7B7B7B;
   cursor: pointer;
 }
-.modal__entrance .form__registration {
+.modal__entrance .form__registration-button,
+.modal__registration .form__registration-button {
   background: #E2E2E2;
   height: 50px;
   width: 100%;
@@ -1278,18 +1465,36 @@ main {
   -webkit-transition: background 0.5s ease 0s;
   transition: background 0.5s ease 0s;
 }
-.modal__entrance .form__registration:hover {
+.modal__entrance .form__registration-button:hover,
+.modal__registration .form__registration-button:hover {
   background: #AEAEAE;
 }
-.modal__entrance .form__agree-wrap {
+.modal__entrance .form__agree-wrap,
+.modal__registration .form__agree-wrap {
   margin: 0px 0px 0px 0px;
 }
-.modal__entrance .form__agree-checkbox {
+.modal__entrance .form__agree-checkbox,
+.modal__registration .form__agree-checkbox {
   line-height: 19px;
 }
-.modal__entrance .form .button {
+.modal__entrance .form__select-wrap,
+.modal__registration .form__select-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal__entrance .form .button,
+.modal__registration .form .button {
   width: 100%;
   margin: 3px 0px 0px 0px;
+}
+
+.modal__registration .form__agree-checkbox {
+  font-size: 14px;
+  color: #2E000B;
+}
+.modal__registration .form__agree-checkbox a {
+  color: #BC0021;
 }
 
 .proof-of-age__header {
@@ -2242,4 +2447,20 @@ main {
 .product-kind-btns__item.active, .product-kind-btns a.active {
   background: #98001B;
   color: #FFFFFF;
+}
+
+.select {
+  border: 1px solid #B6B6B6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px 0px 10px 20px;
+  margin: 0px 10px 0px 0px;
+  width: 25%;
+}
+.select:last-child {
+  margin: 0px 0px 0px 0px;
+}
+.select__month {
+  width: 50%;
 }

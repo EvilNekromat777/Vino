@@ -102,17 +102,11 @@ $(".product-kind-btns__item").click(function(e) {
 });
 
 
-// Сердечко закрашивается "Добавить в избранное"
-$(".favourites").click(function(e) {
-    e.preventDefault();
-    $(this).toggleClass('active');
-  });
-
-
 // Открытие целиковой карточки товара при клике на превью
-$(".product-min").click(function() {
-document.location.href = "product-card.html";
+$(".product-min").click(function(e) {
+      document.location.href = "product-card.html";
 }); 
+
 
 
 
@@ -122,6 +116,13 @@ $(".product-min .in-the-basket").click(function(e) {
     $(this).addClass('hide');
     $(this).parent().addClass('active');
   })
+
+
+  // Сердечко закрашивается "Добавить в избранное"
+$(".favourites").click(function(e) {
+  e.preventDefault();
+  $(this).toggleClass('active');
+});
 
 
       // Добавить промокод
@@ -169,3 +170,27 @@ $(".form__forgot").click(function(e) {
   e.preventDefault();
   $('.modal__password-recovery').removeClass('hide');
 })
+
+  // Модалка регистрации открывается по кнопке Зарегистрироваться
+  $(".form__registration-button").click(function(e) {
+    e.preventDefault();
+    $('.modal__registration').addClass('active');
+
+    $(".modal__close").click(function(){
+      $('.modal__registration').addClass('hide');
+    });
+  })
+
+
+    // Сортировка
+$(".sorting-min").click(function(e) {
+  e.preventDefault();
+  $('.sorting-min').toggleClass('active');
+})
+
+
+    // input "Поиск по каталогу"
+    $(".search-form").click(function(e) {
+      e.preventDefault();
+      $('.search-form').toggleClass('active');
+    })

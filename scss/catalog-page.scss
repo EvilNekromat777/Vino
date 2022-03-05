@@ -12,6 +12,11 @@
         width: 200px;
         margin: 0 auto;
     }
+
+    .title-block__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .pager{
@@ -71,5 +76,97 @@
                 }
             }
         }
+    }
+}
+
+.sorting-min {
+    display: flex;
+    align-items: center;
+
+    p{
+        font-size: 14px;
+        color: $text-grey;
+        margin-right: 9px;
+    }
+
+    &.active{
+
+        .sorting-min__filter{
+            display: block;
+        }
+
+        .sorting-min__button{
+            background: $button-active;
+            border-radius: 5px 5px 0px 0px;
+            color: $text-white;
+
+            &::after{
+                top: 19px;
+                border-bottom: 1px solid $text-white;
+                border-right: 1px solid $text-white;
+                transform: rotate(-135deg);
+            }
+        }
+    }
+
+    &__filter{
+        border: 1px solid $border;
+        box-sizing: border-box;
+        border-radius: 0px 0px 5px 5px;
+        width: 169px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        z-index: 10;
+        background: $background-white;
+        display: none;
+
+        a{
+            color: $text-lite;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            padding: 0px 0px 0px 19px;
+            height: 40px;
+            cursor: pointer;
+
+            &.active{
+                background: #E2E2E2;
+                color: $button-active;
+            }
+        }
+    }
+
+    &__button{
+        width: 169px;
+        height: 40px;
+        padding: 0px 18px 0px 19px;
+        font-size: 14px;
+        background: $background-white;
+        color: $text-grey;
+        border: 1px solid #B6B6B6;
+        box-sizing: border-box;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 16px;
+            right: 18px;
+            height: 4px;
+            width: 4px;
+            border-bottom: 1px solid $text-grey;
+            border-right: 1px solid $text-grey;
+            transform: rotate(45deg);
+        }
+
+    }
+
+    &__wrap{
+        position: relative;
     }
 }

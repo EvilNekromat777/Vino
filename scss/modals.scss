@@ -36,15 +36,43 @@
             height: 20px;
         }
     }
+
+    &__body{
+        padding: 25px 20px 0px 28px;
+    }
+
+    &__title{
+        font-weight: 500;
+        font-size: 24px;
+        color: $text-bold;
+    }
+
+    &__password-recovery{
+        padding: 25px 30px 30px;
+
+        .modal__title{
+            margin-bottom: 24px;
+        }
+
+        .button{
+            width: 100%;
+        }
+
+        .form__row{
+            margin: 0px 0px 30px 0px;
+        }
+    }
 }
 
 .modal__confirm-age.active,
-.modal__entrance.active{
+.modal__entrance.active,
+.modal__registration.active{
     opacity: 1;
     visibility: visible;
 }
 
-.modal__entrance{
+.modal__entrance,
+.modal__registration{
 
     .modal{
 
@@ -54,30 +82,9 @@
         }
 
         &__body{
-            padding: 25px 20px 0px 28px;
+            padding: 25px 30px 30px 30px;
         }
-
-        &__title{
-            font-weight: 500;
-            font-size: 24px;
-            color: $text-bold;
-        }
-
-        &__password-recovery{
-            padding: 25px 30px 30px;
-
-            .modal__title{
-                margin-bottom: 24px;
-            }
-
-            .button{
-                width: 100%;
-            }
-
-            .form__row{
-                margin: 0px 0px 30px 0px;
-            }
-        }
+        
     }
 
     .form{
@@ -88,6 +95,15 @@
             display: flex;
             justify-content: space-between;
             align-items:center;
+
+            &_select{
+                display: block;
+
+                .modal__title{
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+            }
         }
 
         &__input{
@@ -105,7 +121,7 @@
             cursor: pointer;
         }
 
-        &__registration{
+        &__registration-button{
             background: #E2E2E2;
             height: 50px;
             width: 100%;
@@ -129,9 +145,25 @@
             }
         } 
 
+        &__select-wrap{
+            display: flex;
+        }
+
         .button{
             width: 100%;
             margin: 3px 0px 0px 0px;
+        }
+    }
+}
+
+.modal__registration{
+
+    .form__agree-checkbox{
+        font-size: 14px;
+        color: $text-bold;
+
+        a{
+            color: $text-red;
         }
     }
 }

@@ -100,12 +100,79 @@
 
     &-form{
         display: flex;
+		position: relative;
+		border-radius: 5px;
+
+		&.active{
+
+			.search-form__select{
+				display: block;
+			}
+
+			.search-input{
+				border-radius: 5px 0px 0px 0px;
+			}
+		}
+
+		&__select{
+			display: none;
+			position: absolute;
+			top: 40px;
+			left: 0;
+			width: 100%;
+			background: $background-white;
+			box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.13);
+			border-radius: 0px 0px 5px 5px;
+			z-index: 10;
+
+			&-title{
+				font-weight: 500;
+				font-size: 18px;
+				color: $text-bold;
+				line-height: 260%;
+				padding: 0px 0px 0px 19px;
+			}
+
+			&-item{
+				height: 40px;
+				display: flex;
+				align-items: center;
+				padding: 0px 0px 0px 19px;
+
+				a{
+					font-size: 14px;
+					color: $text-lite;
+					margin-right: 10px;
+				}
+
+				.product-min__info{
+					height: 16px;
+					display: flex;
+					align-items: center;
+					padding: 0px 5px;
+				}
+
+				&.active{
+					background: #E2E2E2;
+
+					a{
+						color: $text-bold;
+					}
+
+					.product-min__info{
+						background: $background-white;
+					}
+				}
+				
+			}
+		}
     }
 
     &-input{
         height: 40px;
         width: 318px;
         padding-left: 20px;
+		border-radius: 5px 0px 0px 5px;
     }
 
     &-button-div{
@@ -114,6 +181,7 @@
         display: flex;
         align-items:center;
         justify-content: center;
+		border-radius: 0px 5px 5px 0px;
 
         button{
             background: transparent;

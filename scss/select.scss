@@ -1,0 +1,16 @@
+.select{
+    border: 1px solid $border;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 0px 10px 20px;
+    margin: 0px 10px 0px 0px;
+    width: 25%;
+
+    &:last-child{
+        margin: 0px 0px 0px 0px;
+    }
+
+    &__month{
+        width: 50%;
+    }
+}

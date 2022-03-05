@@ -39,14 +39,8 @@
         use{
             stroke: $corporat-red;
             fill: $background-white;
-        }
-    }
 
-    &.active{
-
-        svg{
-
-            use{
+            &.active{
                 fill: $corporat-red;
             }
         }

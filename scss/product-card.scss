@@ -195,7 +195,11 @@
         &.active{
 
             svg{
-                fill: $corporat-red;
+
+                use{
+                    fill: $corporat-red;
+                }
+                
             }
 
             p{

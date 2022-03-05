@@ -31,7 +31,7 @@
 									</button>
 									<form action="/search/" method="get" class="search-form">
 										<div class="search-input-div">
-											<input type="text" name="q" class="search-input" placeholder="Поиск по каталогу">
+											<input type="text" name="q" class="search-input" placeholder="Поиск по каталогу" autocomplete="off">
 										</div>
 										<div class="search-button-div">
 											<button type="submit">
@@ -39,6 +39,34 @@
 													<use xlink:href="./images/sprite.svg#catalog-search"></use>
 												</svg>
 											</button>
+										</div>
+                                        <div class="search-form__select">
+											<p class="search-form__select-title">Напитки</p>
+											<div class="search-form__select-item active">
+												<a href="">Монтес Лимитед Селекшн Пино Нуар</a>
+												<p class="product-min__info year">1867г.</p>
+												<p class="product-min__info size">0,75л.</p>
+											</div>
+											<div class="search-form__select-item">
+												<a href="">Кайкен Эстейт Мальбек Розе</a>
+												<p class="product-min__info year">1867г.</p>
+												<p class="product-min__info size">0,75л.</p>
+											</div>
+											<div class="search-form__select-item">
+												<a href="">Кайкен Эстейт Мальбек</a>
+												<p class="product-min__info year">1867г.</p>
+												<p class="product-min__info size">0,75л.</p>
+											</div>
+											<div class="search-form__select-item">
+												<a href="">Кайкен Ультра Шардоне</a>
+												<p class="product-min__info year">1867г.</p>
+												<p class="product-min__info size">0,75л.</p>
+											</div>
+											<div class="search-form__select-item">
+												<a href="">Монтес Альфа Карменер</a>
+												<p class="product-min__info year">1867г.</p>
+												<p class="product-min__info size">0,75л.</p>
+											</div>
 										</div>
 									</form>
 								</div>
@@ -51,7 +79,7 @@
 								<div class="header__icons">
 									<a href="" class="header__icon-group favourites">
 										<svg>
-											<use xlink:href="./images/sprite.svg#favourites-icon"></use>
+											<use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
 										</svg>
 										<p>Избранное</p>
 										<span class="qount">346</span>
@@ -706,7 +734,7 @@
                                     <div class="product-min__plashka available">В наличии</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -754,7 +782,7 @@
                                     <div class="product-min__plashka available available_not">Ожидается</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -802,7 +830,7 @@
                                     <div class="product-min__plashka available">В наличии</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -850,7 +878,7 @@
                                     <div class="product-min__plashka available available_not">Ожидается</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -898,7 +926,7 @@
                                     <div class="product-min__plashka available">В наличии</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -946,7 +974,7 @@
                                     <div class="product-min__plashka available available_not">Ожидается</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -1016,7 +1044,7 @@
                                     <div class="product-min__plashka available">В наличии</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -1064,7 +1092,7 @@
                                     <div class="product-min__plashka available available_not">Ожидается</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -1112,7 +1140,7 @@
                                     <div class="product-min__plashka available">В наличии</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -1160,7 +1188,7 @@
                                     <div class="product-min__plashka available available_not">Ожидается</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -1208,7 +1236,7 @@
                                     <div class="product-min__plashka available">В наличии</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -1256,7 +1284,7 @@
                                     <div class="product-min__plashka available available_not">Ожидается</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -1326,7 +1354,7 @@
                                     <div class="product-min__plashka available">В наличии</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -1374,7 +1402,7 @@
                                     <div class="product-min__plashka available available_not">Ожидается</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -1422,7 +1450,7 @@
                                     <div class="product-min__plashka available">В наличии</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -1470,7 +1498,7 @@
                                     <div class="product-min__plashka available available_not">Ожидается</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -1518,7 +1546,7 @@
                                     <div class="product-min__plashka available">В наличии</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">
@@ -1566,7 +1594,7 @@
                                     <div class="product-min__plashka available available_not">Ожидается</div>
                                     <div class="product-min__plashka favourites">
                                         <svg>
-                                            <use xlink:href="./images/sprite.svg#favourites-icon"></use>
+                                            <use class="like" xlink:href="./images/sprite.svg#favourites-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="product-min__img">

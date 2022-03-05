@@ -72,3 +72,8 @@ $(".reviews__more").click(function(e) {
 });
 
 
+  // Сердечко закрашивается "Добавить в избранное"
+$(".favourites").click(function(e) {
+  e.preventDefault();
+  $(this).toggleClass('active');
+});

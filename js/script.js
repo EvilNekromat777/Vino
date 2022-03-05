@@ -102,27 +102,54 @@ $(".product-kind-btns__item").click(function(e) {
 });
 
 
+const cardProductMin = document.querySelectorAll('.product-min');
+
+      // const inTheBasket = document.querySelector('.in-the-basket'),
+      //   inTheBasketButton = document.querySelector('.in-the-basket .button'),
+      //   inTheBusketSvg = document.querySelector('.in-the-basket .button svg'),
+      //   inTheBusketSpan = document.querySelector('span');
+
+    
+
+
+function clickCard(){
+  cardProductMin.forEach(element => {
+    element.addEventListener('click', (e) => {
+      if (e.target.classList.contains('like')){
+        e.target.classList.toggle('active');
+      } else if(e.target.classList.contains('button') || e.target.parentElement.classList.contains('button')){
+        console.log("кнопка");
+        e.target.classList.add('hide');
+      }
+      else {
+        // document.location.href = "product-card.html";
+        console.log(e.target);
+      }
+      })
+  });
+}
+
+clickCard();
+    
+
+
+
 // Открытие целиковой карточки товара при клике на превью
-$(".product-min").click(function(e) {
-      document.location.href = "product-card.html";
-}); 
-
-
+// $(".product-min").click(function() {
+//       document.location.href = "product-card.html";
+     
+// }); 
 
 
     // При нажатии кнопки "Добавить в корзину" появляется счетчик
-$(".product-min .in-the-basket").click(function(e) {
-    e.preventDefault();
-    $(this).addClass('hide');
-    $(this).parent().addClass('active');
-  })
+// $(".product-min .in-the-basket").click(function(e) {
+//     e.preventDefault();
+//     $(this).addClass('hide');
+//     $(this).parent().addClass('active');
+//   })
 
 
-  // Сердечко закрашивается "Добавить в избранное"
-$(".favourites").click(function(e) {
-  e.preventDefault();
-  $(this).toggleClass('active');
-});
+ 
 
 
       // Добавить промокод

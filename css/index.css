@@ -1736,7 +1736,7 @@ main {
   width: 65px;
   margin-top: 10px;
 }
-.product-card .favourites.active svg {
+.product-card .favourites.active svg use {
   fill: #BC0021;
 }
 .product-card .favourites.active p {
@@ -1967,7 +1967,7 @@ main {
   stroke: #BC0021;
   fill: #FFFFFF;
 }
-.favourites.active svg use {
+.favourites svg use.active {
   fill: #BC0021;
 }
 

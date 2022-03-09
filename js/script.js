@@ -102,54 +102,37 @@ $(".product-kind-btns__item").click(function(e) {
 });
 
 
+// Клик на превью товара
 const cardProductMin = document.querySelectorAll('.product-min');
+const  inTheBasketButton = document.querySelectorAll('.in-the-basket .button');
 
-      // const inTheBasket = document.querySelector('.in-the-basket'),
-      //   inTheBasketButton = document.querySelector('.in-the-basket .button'),
-      //   inTheBusketSvg = document.querySelector('.in-the-basket .button svg'),
-      //   inTheBusketSpan = document.querySelector('span');
-
-    
-
+ // При нажатии кнопки "Добавить в корзину" появляется счетчик
+function clickButton(){
+  inTheBasketButton.forEach(element => {
+    element.addEventListener('click', (e) => {
+      e.currentTarget.parentElement.classList.add('hide');
+      e.currentTarget.parentElement.parentElement.classList.add('active');
+    })
+  })
+};
 
 function clickCard(){
   cardProductMin.forEach(element => {
     element.addEventListener('click', (e) => {
-      if (e.target.classList.contains('like')){
+      if(e.target.classList.contains('like')){
         e.target.classList.toggle('active');
-      } else if(e.target.classList.contains('button') || e.target.parentElement.classList.contains('button')){
-        console.log("кнопка");
-        e.target.classList.add('hide');
+      } else if(e.target.classList.contains('product-min__img') || e.target.classList.contains('block-title')){ // Открытие целиковой карточки товара при клике на превью
+        document.location.href = "product-card.html";
+      } else if(e.target.classList.contains('counter__span')){
+        document.location.href = "basket.html";
+      } else {
+        clickButton();
       }
-      else {
-        // document.location.href = "product-card.html";
-        console.log(e.target);
-      }
-      })
-  });
+    })
+  })
 }
-
 clickCard();
-    
 
-
-
-// Открытие целиковой карточки товара при клике на превью
-// $(".product-min").click(function() {
-//       document.location.href = "product-card.html";
-     
-// }); 
-
-
-    // При нажатии кнопки "Добавить в корзину" появляется счетчик
-// $(".product-min .in-the-basket").click(function(e) {
-//     e.preventDefault();
-//     $(this).addClass('hide');
-//     $(this).parent().addClass('active');
-//   })
-
-
- 
 
 
       // Добавить промокод

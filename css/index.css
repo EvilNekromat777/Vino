@@ -723,7 +723,8 @@ main {
   transition: all 0.5s ease 0s;
 }
 .product-min__img {
-  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 .product-min__info {
   font-size: 10px;

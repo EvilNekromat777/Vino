@@ -16,7 +16,8 @@
     transition: all 0.5s ease 0s;
 
     &__img{
-        text-align: center;
+        margin: 0 auto;
+        display: block;
     }
 
     &__info{

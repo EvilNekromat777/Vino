@@ -136,12 +136,12 @@ clickCard();
 
 // При клике на кнопку "Каталог" (в хедере) - появляется product-menu
 const buttonCatalog = document.querySelector('.button__catalog');
-const productMenu = document.querySelector('.product-menu');
 
 buttonCatalog.addEventListener('click', (e) => {
   if(e.currentTarget.classList.contains('button__catalog')){
-    productMenu.classList.toggle('active');
     buttonCatalog.classList.toggle('active');
+    $('.product-menu').toggleClass('active');
+    $(".product-menu__item").removeClass('active');
   }
 })
 
@@ -226,10 +226,17 @@ $(".sorting-min").click(function(e) {
 })
 
 
-    // input "Поиск по каталогу"
-    $(".search-form").click(function(e) {
-      e.preventDefault();
-      $('.search-form').toggleClass('active');
-    })
+// input "Поиск по каталогу"
+$(".search-form").click(function(e) {
+  e.preventDefault();
+  $('.search-form').toggleClass('active');
+})
 
 
+
+// Аккордеон в футере
+$(".footer__item").click(function(e) {
+  e.preventDefault();
+  $('.footer__item').removeClass('active');
+  $(this).addClass('active');
+})

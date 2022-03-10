@@ -146,6 +146,13 @@ buttonCatalog.addEventListener('click', (e) => {
 })
 
 
+// При клике на логотип - переходим на главную страницу
+$(".logo").click(function(e) {
+  e.preventDefault();
+  document.location.href = "index.html"
+}
+);
+
 
       // Добавить промокод
 $(".basket-page__promocode-add").click(function(e) {

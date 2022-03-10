@@ -92,6 +92,7 @@ h6 {
   overflow: hidden;
   min-height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .container {
@@ -177,10 +178,19 @@ main {
           justify-content: center;
   margin-right: 10px;
 }
-.button__catalog svg {
+.button__catalog .icon {
   width: 20px;
   height: 18px;
   margin-right: 8px;
+}
+.button__catalog .catalog-icon-close {
+  display: none;
+}
+.button__catalog.active .catalog-icon-close {
+  display: block;
+}
+.button__catalog.active .catalog-icon {
+  display: none;
 }
 .button__show-all {
   margin: 0 auto;
@@ -2464,4 +2474,90 @@ main {
 }
 .select__month {
   width: 50%;
+}
+
+.product-menu {
+  position: absolute;
+  top: 150px;
+  left: -100%;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.product-menu__list {
+  width: 300px;
+  height: 100%;
+  background: #F0F0F0;
+  border-right: solid 1px #B6B6B6;
+}
+.product-menu__item {
+  height: 50px;
+  padding: 0px 0px 0px 30px;
+}
+.product-menu__item:hover {
+  background: #98001B;
+}
+.product-menu__item:hover .product-menu__item_link {
+  color: #FFFFFF;
+}
+.product-menu__item:hover .product-menu__inner-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.product-menu__item a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #2E000B;
+  line-height: 50px;
+}
+.product-menu__inner-wrap {
+  position: absolute;
+  top: 0;
+  left: 300px;
+  padding: 33px 0px 0px 75px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: #FAFAFA;
+  z-index: 10;
+}
+.product-menu__inner-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 260%;
+  color: #2E000B;
+  text-transform: uppercase;
+  padding: 0px 0px 0px 20px;
+}
+.product-menu.active {
+  left: 0;
+}
+
+.filter__item li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 220%;
+  color: #2E000B;
+  padding: 0px 20px;
+}
+.filter__item li a {
+  font-weight: 400;
+  font-size: 16px;
+}
+.filter__item li:hover {
+  background: #BC0021;
+  border-radius: 5px;
+}
+.filter__item li:hover a {
+  color: #FFFFFF;
+}
+.filter__item li.li-all a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 260%;
 }

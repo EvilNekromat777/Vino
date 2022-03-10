@@ -134,6 +134,18 @@ function clickCard(){
 clickCard();
 
 
+// При клике на кнопку "Каталог" (в хедере) - появляется product-menu
+const buttonCatalog = document.querySelector('.button__catalog');
+const productMenu = document.querySelector('.product-menu');
+
+buttonCatalog.addEventListener('click', (e) => {
+  if(e.currentTarget.classList.contains('button__catalog')){
+    productMenu.classList.toggle('active');
+    buttonCatalog.classList.toggle('active');
+  }
+})
+
+
 
       // Добавить промокод
 $(".basket-page__promocode-add").click(function(e) {
@@ -204,3 +216,5 @@ $(".sorting-min").click(function(e) {
       e.preventDefault();
       $('.search-form').toggleClass('active');
     })
+
+

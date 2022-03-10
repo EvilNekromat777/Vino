@@ -28,10 +28,25 @@
         justify-content: center;
         margin-right: 10px;
 
-        svg{
+        .icon{
             width: 20px;
             height: 18px;
             margin-right: 8px;
+        }
+
+        .catalog-icon-close{
+            display: none;
+        }
+
+        &.active{
+
+            .catalog-icon-close{
+                display: block;
+            }
+
+            .catalog-icon{
+                display: none;
+            }
         }
     }
 

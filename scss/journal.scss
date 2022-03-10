@@ -64,40 +64,47 @@
         &__item{
             margin: 0 20px 50px;
         }
-
-        .button__more{
-            margin: 0 auto;
-        }
     }
 }
 
-@media (max-width: 520px) {
+
+@media (max-width: 630px){
 
     .journal{
-        margin-top: 40px;
-        padding: 20px 0px 20px 0px;
-
-        &__header{
-            display: block;
-
-            .block-title {
-                margin-bottom: 15px;
-            }
-        }
-    
-        .block-title, .block__text{
-            padding: 0px 10px;
-        }
+        margin-top: 0;
+        padding: 20px 0px 40px 0px;
 
         &__body{
-            margin-top: 25px;
+            margin-top: 10px;
+        }
+
+        &__header {
+
+            .block-title{
+                font-size: 18px;
+                font-weight: 600;
+            }
+    
+            .button__more{
+                min-width: 120px;
+                height: 35px;
+            }
         }
 
         &__item{
-            width: 320px;
+            margin: 0px 0px 0px 0px;
 
             img{
-                width: 320px;
+                width: 100%;
+            }
+
+            .block-title{
+                font-size: 16px;
+            }
+
+            .block__text{
+                font-size: 12px;
+                margin-bottom: 12px;
             }
         }
     }

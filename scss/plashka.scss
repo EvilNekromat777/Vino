@@ -33,8 +33,8 @@
     transition: opacity 0.5s ease 0s;
 
     svg{
-        width: 23px;
-        height: 20px;
+        // width: 23px;
+        // height: 20px;
 
         use{
             stroke: $corporat-red;
@@ -44,5 +44,21 @@
                 fill: $corporat-red;
             }
         }
+    }
+}
+
+
+@media (max-width: 630px){
+
+    .sale{
+        left: 5px;
+        top: 5px;
+        width: 35px;
+        height: 18px;
+        font-size: 12px;
+    }
+
+    .available{
+        right: 5px;
     }
 }

@@ -81,21 +81,3 @@
 
 
 
-
-@media (max-width: 767px){
-
-    .button__catalog{
-        height: 35px;
-    }
-}
-
-
-@media (max-width: 450px){
-
-    .button{
-
-        &__approval, &__disapproval{
-            width: 100%;
-        }
-    }
-}

@@ -179,6 +179,14 @@
     .year{
         transition: all 0.5s ease 0s;
     }
+
+    .favourites{
+
+        svg{
+            width: 23px;
+            height: 20px;
+        }
+    }
 }
 
 .counter{
@@ -234,16 +242,77 @@
 
     .product-min{
         width: 50%;
+        min-width: auto;
     }
 }
 
-@media (max-width: 580px){
+@media (max-width: 630px){
 
-    .products{
-        justify-content: center;
-    }
-    
     .product-min{
-        width: 100%;
+        padding: 5px;
+        height: auto;
+
+        &__img{
+            width: 120px;
+            height: 200px;
+        }
+
+        &__plashka{
+            top: 5px;
+        }
+
+        &__article{
+            margin-top: 10px;
+        }
+
+        &__info{
+            margin-right: 2px;
+            font-size: 8px;
+            padding: 3px;
+        }
+
+        &__buttons-wrap{
+
+            .open-box {
+                width: 43px;
+                height: 43px;
+                margin-left: 5px;
+            }
+        }
+
+        &.active .counter{
+            display: block;
+            text-align: center;
+        }
+
+        .counter{
+
+            &__number{
+                margin: 0 auto 5px;
+                height: 30px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .button{
+            height: 35px;
+
+            span{
+                font-size: 14px;
+            }
+        }
+
+        .block-title{
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .favourites{
+            top: 30px;
+            right: 15px;
+        }
     }
 }

@@ -85,8 +85,6 @@
 		opacity: 1;
 
 		svg{
-			width: 29px;
-			height: 26px;
 
 			use{
 				fill: transparent;
@@ -200,6 +198,10 @@
 		margin-right: 5px;
 		width: 20px;
 		height: 20px;
+
+		use{
+			fill: #fff;
+		}
 	}
 
 	span{
@@ -244,19 +246,6 @@
 
 @media (max-width: 860px){
 
-	.phone{
-
-		span{
-			font-size: 14px;
-		}
-
-		svg{
-			margin-right: 2px;
-			width: 15px;
-			height: 15px;
-		}
-	}
-
 	.header__icon-group{
 
 		.summ{
@@ -269,66 +258,103 @@
 	}
 }
 
-@media (max-width: 767px){
+@media (max-width: 770px){
+
+	.header{
+
+		.phone{
+			display: none;
+		}
+	}
+
+	
+}
+
+@media (max-width: 620px){
 
 	.header{
 
 		&__top{
-			height: 90px;
-		}
-
-		&__row{
-			display: block;
+			height: 70px;
 		}
 
 		&__icons{
-			margin-right: 10px;
+			position: inherit;
 		}
 
 		&__icon-group{
-			margin-right: 14px;
+
+			svg{
+				width: 32px;
+				height: 32px;
+			}
 
 			p{
 				display: none;
 			}
 
-			svg{
-				width: 20px;
-				height: 20px;
+			.qount{
+				top: -7px;
+    			right: -8px;
 			}
+		}
 
-			.summ{
+		.summ{
+			display: none;
+		}
+
+		.search-button-div{
+			display: none;
+		}
+
+		.button__catalog{
+			background: transparent;
+			width: auto;
+
+			span{
 				display: none;
 			}
+		}
 
-			.qount{
-				font-size: 8px;
-				right: -12px;
-    			top: -8px;
-			}
+		.icon{
+			width: 30px;
+    		height: 30px;
+		}
+
+		.logo {
+			margin-right: 0;
+			width: 96px;
+			height: 40px;
+			position: absolute;
+			top: 0;
+			left: 40%;
+		}
+
+		.favourites{
+			position: absolute;
+			top: 3px;
+			left: 60px;
+			width: 32px;
+		}
+	}
+}
+
+@media (max-width: 424px){
+
+	.header{
+
+		&__icon-group{
+			margin-right: 5px;
+		}
+
+		.favourites{
+			left: 45px;
 		}
 
 		.logo{
-			margin-bottom: 5px;
-			height: 35px;
-		}
-	
-		.phone{
-			position: absolute;
-			top: 8px;
-			right: 0;
-	
-			span{
-				font-size: 16px;
-			}
-		}
-	
-		.search-button-div{
-			background: transparent;
+			width: 80px;
 		}
 	}
-
-	
 }
 
 

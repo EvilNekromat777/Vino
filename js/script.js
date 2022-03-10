@@ -146,6 +146,14 @@ buttonCatalog.addEventListener('click', (e) => {
 })
 
 
+// На product-menu при клике на item появляется фильтр
+$(".product-menu__item").click(function(e) {
+  e.preventDefault();
+  $(".product-menu__item").removeClass('active');
+  $(this).addClass('active');
+})
+
+
 // При клике на логотип - переходим на главную страницу
 $(".logo").click(function(e) {
   e.preventDefault();

@@ -1,5 +1,3 @@
-// @import "variables.scss";
-
 .slider-block{
     margin: 40px auto 0;
     padding: 30px 0px 0px 0px;
@@ -81,6 +79,10 @@
 
     &-button-next{
         background: $corporat-red;
+
+        svg{
+            transform: rotate(180deg);
+        }
     }
 
     .product-min{
@@ -89,56 +91,39 @@
   }
 
 
-  @media (max-width: 1230px) {
-
-    .swiper{
-
-        &-button-prev,
-        &-button-next{
-            top: 30px !important;
-            margin-top: 0 !important;
-            width: 30px !important;
-            height: 30px !important;
-        }
-
-        &-button-prev{
-            left: 45% !important;
-        }
-
-        &-button-next{
-            right: 45% !important;
-        }
-    }
-  }
-
-  @media (max-width: 670px) {
+@media (max-width: 630px){
 
     .slider-block{
-
-        .swiper-button-prev {
-            left: 40% !important;
-        }
-    
-        .swiper-button-next {
-            right: 40% !important;
-        }
-    
-        .button__more{
-            min-width: 90px;
-            font-size: 12px;
-            padding: 0 10px;
-        }
-
-        .block-title{
-            font-size: 18px;
-        }
-
-        .slider-block__header .block-title:after{
-            display: none;
-        }
+        margin: 0;
 
         &__header{
             padding: 0px 10px;
+
+            .block-title{
+                font-size: 18px;
+            }
+        }
+
+        .button__more {
+            min-width: 110px;
+            padding: 0 10px;
         }
     }
-  }
+
+    .swiper{
+        height: auto;
+
+        .product-min{
+            width: 172px;
+        }
+
+        .swiper-slide{
+            height: auto !important;
+            width: 200px !important;
+        }
+
+        &-button-next {
+            background: #EFEFEF;
+        }
+    }
+}

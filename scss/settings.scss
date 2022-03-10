@@ -46,3 +46,8 @@ main{
     color: $text-bold;
 }
 
+@media (max-width: 430px){
+    .container{
+        padding: 0 8px;
+    }
+}

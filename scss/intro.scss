@@ -15,6 +15,16 @@
 @media (max-width: 630px){
 
     .intro{
-        padding: 30px 0px 20px 0px;
+        padding: 20px 0px 20px 0px;
+
+        .block-title {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .block__text{
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
     }
 }

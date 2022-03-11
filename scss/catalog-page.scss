@@ -36,6 +36,11 @@
         cursor: pointer;
         transition: all 0.5s ease 0s;
 
+        &_more{
+            border: 0;
+            padding: 10px;
+        }
+
         &.active{
             background: $corporat-red;
 
@@ -172,6 +177,51 @@
 }
 
 
+@media (max-width: 1000px){
+
+    .catalog-page{
+
+        .title-block{
+
+            &__wrap{
+                display: block;
+
+                .sorting-min{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 710px){
+
+    .pager{
+        margin: 30px 0px 30px 0px;
+
+        &__item{
+            padding: 5px 10px;
+
+            a{
+                font-size: 12px;
+            }
+
+            &_prev,
+            &_next{
+
+                a{
+                    font-size: 0;
+
+                    span{
+                        margin: 3px 3px 0px 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width:  630px){
 
     .catalog-page{
@@ -184,4 +234,20 @@
             margin-top: 20px;
         }
     }
+
+    .sorting-min{
+
+        &__button{
+            width: 130px;
+            height: 30px;
+            padding: 0px 5px 0px 5px;
+            font-size: 12px;
+
+            &::after{
+                top: 10px;
+                right: 10px;
+            }
+        }
+    }
 }
+

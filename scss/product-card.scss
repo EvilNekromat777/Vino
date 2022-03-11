@@ -96,6 +96,8 @@
 
             img{
                 height: 100%;
+                margin: 0 auto;
+                display: block;
             }
 
             &__plashka.sale{
@@ -413,6 +415,211 @@
             height: 25px;
             opacity: 0.7;
             background: #fff;
+        }
+    }
+}
+
+
+@media (max-width: 1235px){
+
+    .product-card{
+
+        .product-min__img{
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 1060px){
+
+    .product-card {
+
+        &__price{
+            width: 100%;
+            height: 210px;
+            margin: 10px 0px 0px 0px;
+            padding: 25px 15px 20px 20px;
+            background: transparent;
+            border: 1px solid $border;
+
+            &-old{
+                margin-top: 15px;
+                margin-left: 5px;
+
+                .product-min__plashka.sale{
+                    width: 30px;
+                    height: 18px;
+                    top: -20px;
+                    left: 0;
+                    font-size: 10px;
+                }
+            }
+
+            &-wrap{
+
+                .new{
+                    font-size: 34px;
+                }
+            }
+        }
+
+        .product-min{
+
+            &__buttons-wrap{
+    
+                .button {
+                    width: 246px;
+                    height: 35px;
+                }
+    
+                .open-box{
+                    width: 54px;
+                    height: 35px;
+                }
+            }
+        }
+
+        .counter{
+
+            &__number{
+                width: 110px;
+                height: 35px;
+                margin: 0 25px 0 0;
+            }
+
+            &__offer{
+
+                &-info{
+                    font-size: 12px;
+                }
+
+                &-price{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 970px){
+
+    .product-card{
+
+        &__price{
+            width: 320px;
+        }
+
+        &__wrap{
+            margin-top: 12px;
+        }
+
+        &__title{
+            display: block;
+
+            .block-title{
+                font-size: 18px;
+                margin: 0px 0px 5px 0px;
+            }
+        }
+
+        &__body{
+            display: block;
+        }
+
+        &__footer {
+            margin-top: 30px;
+        }
+
+        .product-min{
+
+            &__info-wrap,
+            &__article{
+                display: none;
+            }
+
+            &__img{
+                width: auto;
+                height: auto;
+
+                img{
+                    width: 230px;
+                    height: 350px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .sale{
+            left: 15px;
+        }
+
+        .favourites{
+            right: 5px;
+            top: 40px;
+
+            p{
+                font-size: 10px;
+                margin-top: 3px;
+            }
+        }
+
+        .specifications{
+
+            &__items, a{
+                display: none;
+            }
+        }
+    }
+
+    .tabs{
+
+        &__caption{
+
+            li{
+                font-size: 18px;
+
+                &::after{
+                    height: 20px;
+                }
+            }
+        }
+
+        .specifications{
+            width: 100%;
+            margin: 20px 0px 0px 0px;
+
+            &__description{
+                height: 200px;
+    
+                p{
+                    font-size: 12px;
+                    margin: 0px 0px 10px 0px;
+                }
+            }
+
+            &__items{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__item{
+                margin-right: 0;
+                width: 50%;
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 470px){
+
+    .product-card{
+
+        &__price{
+            width: 100%;
         }
     }
 }

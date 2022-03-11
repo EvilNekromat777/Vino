@@ -203,3 +203,128 @@
     align-items: center;
     margin: 12px 0px 0px 0px;
 }
+
+
+@media (max-width: 1090px){
+
+    .basket-page{
+
+        &__body{
+            display: block;
+        }
+
+        &__items {
+            width: 100%;
+        }
+
+        &__result{
+            width: 300px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+@media (max-width: 790px){
+
+    .basket-page{
+
+        &__item{
+            display: block;
+
+            &-right-block{
+                margin: -50px 0px 0px 160px;
+            }
+
+            &-price{
+                padding: 0 0px 0px 0px;
+            }
+
+            .counter{
+                margin: 0 50px 0 0;
+
+                button{
+                    color: #98001B;
+
+                    svg{
+
+                        use{
+                            stroke: #98001B;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 540px){
+
+    .basket-page{
+
+        &__item{
+            padding: 10px 10px 10px 10px;
+
+            &-right-block{
+                margin: -70px 0px 0px 130px;
+            }
+
+            .counter{
+                margin: 0 20px 0 0;
+
+                &__number{
+                    width: 100px;
+                    height: 30px;
+
+                    span{
+                        padding: 5px 10px;
+                    }
+                }
+            }
+
+            .product-min__price{
+                font-size: 16px;
+            }
+
+            .product-min__price.old{
+                font-size: 12px;
+                margin-left: 13px;
+
+                &::before{
+                    width: 45px;
+                }
+            }
+        }
+
+        &__img {
+
+            img{
+                margin-right: 20px;
+            }
+        }
+
+        &__description{
+
+            .block-title{
+                font-size: 12px;
+
+                &__inglish{
+                    font-size: 12px;
+                }
+            }
+        }
+
+        &__result{
+            width: 100%;
+        }
+
+        .sale{
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 20px;
+            font-size: 10px;
+        }
+    }
+}

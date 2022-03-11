@@ -44,3 +44,26 @@
         }
     }
 }
+
+
+@media (max-width: 550px){
+
+    .breadcrumbs{
+
+        &__list{
+            margin-top: 10px;
+
+            li {
+                margin-right: 5px;
+
+                &::after{
+                    margin: 0px 7px 1px;
+                }
+            }
+        }
+
+        &__item{
+            font-size: 10px;
+        }
+    }
+}

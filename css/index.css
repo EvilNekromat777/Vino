@@ -3393,7 +3393,7 @@ main {
   }
   .filter__button:after {
     top: 13px;
-    right: 8px;
+    right: 12px;
   }
 
   .sidebar-filter__title {

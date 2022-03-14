@@ -75,12 +75,6 @@ $(".product-kind-btns__item").click(function(e) {
     $(this).addClass('active');
 });
 
-
-  // Мобильный футер
-  $(".footer__item").click(function(e) {
-    e.preventDefault();
-    $(this).toggleClass('active');
-  })
  
 
 // Счетчик кол-ва товаров внутри карточки
@@ -146,13 +140,21 @@ buttonCatalog.addEventListener('click', (e) => {
 })
 
 
-// На product-menu при клике на item появляется фильтр
+// На product-menu при клике на item появляется фильтр (десктоп)
 $(".product-menu__item").click(function(e) {
   e.preventDefault();
   $(".product-menu__item").removeClass('active');
   $(this).addClass('active');
 })
 
+
+// На product-menu при клике на item переходим на страницу каталога (мобилка)
+$(".product-menu__item").click(function(e){
+  e.preventDefault();
+  if($('body').hasClass('_touch')){
+    document.location.href = "catalog-page.html"
+  }
+});
 
 // При клике на логотип - переходим на главную страницу
 $(".logo").click(function(e) {
@@ -220,7 +222,7 @@ $(".form__forgot").click(function(e) {
 
 
     // Сортировка
-$(".sorting-min").click(function(e) {
+$(".sorting-min__button").click(function(e) {
   e.preventDefault();
   $('.sorting-min').toggleClass('active');
 })
@@ -237,6 +239,11 @@ $(".search-form").click(function(e) {
 // Аккордеон в футере
 $(".footer__item").click(function(e) {
   e.preventDefault();
-  $('.footer__item').removeClass('active');
-  $(this).addClass('active');
+
+  if($(this).hasClass('active')){
+    $(this).removeClass('active');
+  } else {
+    $(".footer__item").removeClass('active');
+    $(this).addClass('active');
+  }
 })

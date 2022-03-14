@@ -267,6 +267,18 @@
 		}
 	}
 
+	.search{
+
+		&-form{
+
+			&.active{
+
+				.search-form__select{
+					display: none;
+				}
+			}
+		}
+	}
 	
 }
 

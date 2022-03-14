@@ -295,6 +295,10 @@
             &__block-content button{
                 font-size: 12px;
             }
+
+            &__input:checked + .sidebar-filter__label:after{
+                top: 9px;
+            }
         }
     }
 }

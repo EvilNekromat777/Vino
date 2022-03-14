@@ -1201,6 +1201,7 @@ main {
   }
   .slider-block__header .block-title {
     font-size: 18px;
+    margin-bottom: 15px;
   }
   .slider-block .button__more {
     min-width: 110px;
@@ -3403,5 +3404,8 @@ main {
   }
   .sidebar-filter__block-content button {
     font-size: 12px;
+  }
+  .sidebar-filter__input:checked + .sidebar-filter__label:after {
+    top: 9px;
   }
 }
